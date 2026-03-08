@@ -44,6 +44,9 @@ public class LevelManager : MonoBehaviour
 
         if (mapManager != null && configForThisLevel != null)
         {
+            //Setup the clouds FIRST!
+            mapManager.SetupClouds(configForThisLevel.cloudedCities);
+            // Then place the avatars!
             mapManager.PlaceAvatarsAtStart(configForThisLevel.characterA.startingCity, configForThisLevel.characterB.startingCity);
         }
 

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class MapManager : MonoBehaviour
@@ -6,49 +7,51 @@ public class MapManager : MonoBehaviour
     public RectTransform avatarA;
     public RectTransform avatarB;
 
-    [Header("The Invisible Nodes Folder")]
+    [Header("Folders")]
     public Transform mapNodesParent;
+    public Transform cloudsParent; // NEW: The folder holding your cloud images!
 
-    // The Level Manager will call this and pass in the starting cities (e.g., "Germany", "France")
     public void PlaceAvatarsAtStart(string startCityA, string startCityB)
     {
-        // Place Player A
         Transform nodeA = FindNodeByName(startCityA);
-        if (nodeA != null)
+        if (nodeA != null) { avatarA.position = nodeA.position; avatarA.gameObject.SetActive(true); }
+
+        Transform nodeB = FindNodeByName(startCityB);
+        if (nodeB != null) { avatarB.position = nodeB.position; avatarB.gameObject.SetActive(true); }
+    }
+
+    // --- THE NEW FOG OF WAR LOGIC ---
+    public void SetupClouds(List<string> cloudedCities)
+    {
+        // 1. Turn the correct Cloud Images ON or OFF
+        if (cloudsParent != null)
         {
-            avatarA.position = nodeA.position;
-            avatarA.gameObject.SetActive(true);
-        }
-        else
-        {
-            Debug.LogWarning("Could not find a map node named: " + startCityA);
+            foreach (Transform cloud in cloudsParent)
+            {
+                // Does our list contain the exact name of this cloud?
+                bool shouldBeClouded = cloudedCities.Contains(cloud.name);
+                cloud.gameObject.SetActive(shouldBeClouded);
+            }
         }
 
-        // Place Player B
-        Transform nodeB = FindNodeByName(startCityB);
-        if (nodeB != null)
+        // 2. Turn the invisible Nodes ON or OFF
+        if (mapNodesParent != null)
         {
-            avatarB.position = nodeB.position;
-            avatarB.gameObject.SetActive(true);
-        }
-        else
-        {
-            Debug.LogWarning("Could not find a map node named: " + startCityB);
+            foreach (Transform node in mapNodesParent)
+            {
+                bool shouldBeClouded = cloudedCities.Contains(node.name);
+                // If it IS clouded, we set the node to FALSE (inactive)
+                node.gameObject.SetActive(!shouldBeClouded);
+            }
         }
     }
 
-    // A simple helper function that searches through our MapNodes folder
     private Transform FindNodeByName(string cityName)
     {
-        // Loop through all the invisible country boxes we made
         foreach (Transform node in mapNodesParent)
         {
-            // If the name matches perfectly (ignoring uppercase/lowercase differences)
-            if (node.name.Equals(cityName, System.StringComparison.OrdinalIgnoreCase))
-            {
-                return node;
-            }
+            if (node.name.Equals(cityName, System.StringComparison.OrdinalIgnoreCase)) return node;
         }
-        return null; // We didn't find it!
+        return null;
     }
 }

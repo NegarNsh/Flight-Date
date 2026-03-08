@@ -51,6 +51,27 @@ public class LevelDatabase : MonoBehaviour
             newLevel.characterB.startingMoney = float.Parse(columns[7]);
             newLevel.characterB.startingCity = columns[8];
 
+            if (columns.Length > 9 && !string.IsNullOrEmpty(columns[9]))
+            {
+                // We split using the semicolon!
+                string[] clouds = columns[9].Split(';');
+                foreach (string c in clouds)
+                {
+                    newLevel.cloudedCities.Add(c.Trim()); // Trim removes accidental spaces
+                }
+            }
+
+            // for win text
+            if (columns.Length > 10 && !string.IsNullOrEmpty(columns[10]))
+            {
+                newLevel.winText = columns[10].Trim();
+            }
+            else
+            {
+                // A fallback message just in case you forget to type one in the spreadsheet!
+                newLevel.winText = "Level Complete!";
+            }
+
             allLevelConfigs.Add(newLevel);
         }
         Debug.Log("Successfully loaded " + allLevelConfigs.Count + " levels from the Spreadsheet!");

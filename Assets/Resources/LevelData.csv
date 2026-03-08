@@ -1,7 +1,3 @@
-LevelNumber,NameA,PortraitA,MoneyA,CityA,NameB,PortraitB,MoneyB,CityB
-1,Anzum,CharacterB,100,Girini,Negar,CharacterA,200,Tuttuti
-2,Charlotte,CharacterA,250,Mavimia,Marlotte,CharacterB,150,Fokulo
-3,Meow,CharacterB,1000,Girini,Meh,CharacterA,2000,Tuttuti
-4,Hiiii,CharacterA,2000,Mavimia,Hello,CharacterB,1500,Fokulo
-5,Im tired,CharacterB,3000,Girini,Bende,CharacterA,2000,Tuttuti
-6,Okay im not tired,CharacterA,4000,Mavimia,Really,CharacterB,1500,Fokulo
+LevelNumber,NameA,PortraitA,MoneyA,CityA,NameB,PortraitB,MoneyB,CityB,CloudedCities,WinText
+1,Anzum,CharacterA,100,Girini,Negar,CharacterB,100,Mavimia,Fokulo;Culibi;Tuttuti;Yadibu;Gotte,"We met at the same location, nice!"
+2,Şunti,CharacterA,500,Giervi,Mendi,CharacterB,500,Girini,Fokulo;Culibi;Tuttuti;Yadibu;Gotte,There are so much to talk about... Let's grab some coffee.

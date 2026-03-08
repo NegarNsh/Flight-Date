@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro; // NEW: We need this to talk to the Text block!
 
 public class GameResultManager : MonoBehaviour
 {
@@ -8,12 +9,14 @@ public class GameResultManager : MonoBehaviour
     public GameObject winScreen;
     public GameObject loseScreen;
 
+    [Header("UI Text")]
+    public TextMeshProUGUI winTextDisplay; // NEW: The physical text box on your screen!
+
     void Awake()
     {
         if (instance == null) { instance = this; } else { Destroy(gameObject); }
     }
 
-    // The Level Manager will call this when Travel is clicked
     public void CheckWinCondition(PlayerUIManager playerUI, LevelConfig config)
     {
         string finalDestA = GetFinalDestination(playerUI.dropZoneA, config.characterA.startingCity);
@@ -22,6 +25,13 @@ public class GameResultManager : MonoBehaviour
         if (finalDestA == finalDestB)
         {
             Debug.Log("WIN! Both players met in " + finalDestA);
+
+            // NEW: Change the text before we turn the screen on!
+            if (winTextDisplay != null)
+            {
+                winTextDisplay.text = config.winText;
+            }
+
             if (winScreen != null) winScreen.SetActive(true);
         }
         else
@@ -41,7 +51,6 @@ public class GameResultManager : MonoBehaviour
         return flight.flightData.destination;
     }
 
-    // Helper to turn off the screens when resetting the level
     public void HideAllScreens()
     {
         if (winScreen != null) winScreen.SetActive(false);

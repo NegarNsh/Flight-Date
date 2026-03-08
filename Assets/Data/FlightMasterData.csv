@@ -1,6 +1,6 @@
 level,flightID,origin,destination,basePrice,departureDay,startTimeText,durationHours
-1,F1-Grini-Tuttuti,Grini,Tuttuti,6,2,8:00,3
-1,F2-Mavimia-Tuttuti,Mavimia,Tuttuti,11,2,8:00,7
+1,F1-Girini-Ugvitu,Girini,Ugvitu,6,2,8:00,3
+1,F2-Mavimia-Ugvitu,Mavimia,Ugvitu,11,2,8:00,7
 2,F3-Giervi-Mavimia,Giervi,Mavimia,21,1,9:06,9
 2,F4-Ugvitu-Mavimia,Ugvitu,Mavimia,28,1,14:12,8
 2,F5-Girini-Mavimia,Girini,Mavimia,22,1,9:18,9

@@ -95,6 +95,8 @@ public class LevelManager : MonoBehaviour
         {
             foreach (Transform child in playerUIManager.dropZoneA) Destroy(child.gameObject);
             foreach (Transform child in playerUIManager.dropZoneB) Destroy(child.gameObject);
+
+            if (MapManager.instance != null) MapManager.instance.ClearAllLines();
         }
     }
 }

@@ -123,5 +123,12 @@ public class DraggableFlight : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         Destroy(placeholder);
 
         if (PlayerUIManager.instance != null) PlayerUIManager.instance.RecalculateExpenses();
+
+        // Update the map to perfectly match wherever this ticket ended up!
+        if (MapManager.instance != null)
+        {
+            MapManager.instance.RefreshMap();
+        }
+
     }
 }

@@ -117,7 +117,33 @@ public class TimelineColumn : MonoBehaviour, IDropHandler, IPointerEnterHandler
         if (eventData.pointerDrag != null)
         {
             DraggableFlight flight = eventData.pointerDrag.GetComponent<DraggableFlight>();
-            if (flight != null) flight.parentAfterDrag = this.transform;
+            if (flight != null)
+            {
+                flight.parentAfterDrag = this.transform;
+
+            }
         }
+    }
+
+    // --- NEW: Gets all dropped flights in chronological order! ---
+    public List<Flight> GetSortedFlights()
+    {
+        List<DraggableFlight> flights = new List<DraggableFlight>();
+
+        // Find every ticket currently dropped in this column
+        foreach (Transform child in transform)
+        {
+            DraggableFlight df = child.GetComponent<DraggableFlight>();
+            if (df != null) flights.Add(df);
+        }
+
+        // Sort them by their exact departure time!
+        flights.Sort((a, b) => a.flightData.exactDeparture.CompareTo(b.flightData.exactDeparture));
+
+        // Extract just the data to send to the map
+        List<Flight> sortedData = new List<Flight>();
+        foreach (var f in flights) sortedData.Add(f.flightData);
+
+        return sortedData;
     }
 }

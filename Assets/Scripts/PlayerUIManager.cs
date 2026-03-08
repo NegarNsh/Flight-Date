@@ -37,25 +37,39 @@ public class PlayerUIManager : MonoBehaviour
 
     public void SetupLevelCharacters(LevelConfig currentLevelData)
     {
-        // Save the budgets into our secret variables!
+        // 1. Save the budgets
         budgetA = currentLevelData.characterA.startingMoney;
         budgetB = currentLevelData.characterB.startingMoney;
 
-        // Setup Character A
-        if (portraitA != null) portraitA.sprite = currentLevelData.characterA.portrait;
+        // 2. Setup Top Bar Character A
+        if (portraitA != null) portraitA.sprite = Resources.Load<Sprite>($"Characters/{currentLevelData.characterA.characterName}_Normal");
         if (nameTextA != null) nameTextA.text = currentLevelData.characterA.characterName;
         if (moneyTextA != null) moneyTextA.text = "$" + budgetA.ToString();
         if (expenseTextA != null) expenseTextA.text = "";
 
-        // Setup Character B
-        if (portraitB != null) portraitB.sprite = currentLevelData.characterB.portrait;
+        // 3. Setup Top Bar Character B
+        if (portraitB != null) portraitB.sprite = Resources.Load<Sprite>($"Characters/{currentLevelData.characterB.characterName}_Normal");
         if (nameTextB != null) nameTextB.text = currentLevelData.characterB.characterName;
         if (moneyTextB != null) moneyTextB.text = "$" + budgetB.ToString();
         if (expenseTextB != null) expenseTextB.text = "";
 
-        // Force the button to be off when the level first starts!
+        // 4. Setup the little Map Avatars!
+        if (MapManager.instance != null)
+        {
+            MapManager.instance.avatarA.GetComponent<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>($"Characters/{currentLevelData.characterA.characterName}_Normal");
+            MapManager.instance.avatarB.GetComponent<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>($"Characters/{currentLevelData.characterB.characterName}_Normal");
+        }
+
+        // 5. Setup the Happy and Sad faces on the Win/Lose Screens!
+        if (GameResultManager.instance != null)
+        {
+            GameResultManager.instance.SetupLevelPortraits(currentLevelData.characterA.characterName, currentLevelData.characterB.characterName);
+        }
+
+        // 6. Force the button to be off when the level first starts!
         UpdateButtonState(false);
     }
+
 
     // --- THE MATH MAGIC ---
     public void RecalculateExpenses()

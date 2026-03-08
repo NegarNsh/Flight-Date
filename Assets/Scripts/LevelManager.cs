@@ -29,6 +29,13 @@ public class LevelManager : MonoBehaviour
         List<Flight> flightsForThisLevel = FlightDatabase.instance.GetFlightsForLevel(currentLevel);
         if (uiManager != null) uiManager.DisplayFlights(flightsForThisLevel);
 
+        // ---> NEW TIMELINE GENERATOR TRIGGER <---
+        if (playerUIManager != null)
+        {
+            playerUIManager.dropZoneA.GetComponent<TimelineColumn>().GenerateTimeline(flightsForThisLevel);
+            playerUIManager.dropZoneB.GetComponent<TimelineColumn>().GenerateTimeline(flightsForThisLevel);
+        }
+
         // Notice we ask the new LevelDatabase for the config!
         LevelConfig configForThisLevel = LevelDatabase.instance.GetConfigForLevel(currentLevel);
 

@@ -1,3 +1,6 @@
-LevelNumber,NameA,PortraitA,MoneyA,CityA,NameB,PortraitB,MoneyB,CityB,CloudedCities,WinText
-1,Anzum,CharacterA,100,Girini,Negar,CharacterB,100,Mavimia,Fokulo;Culibi;Tuttuti;Yadibu;Gotte,"We met at the same location, nice!"
-2,Şunti,CharacterA,500,Giervi,Mendi,CharacterB,500,Girini,Fokulo;Culibi;Tuttuti;Yadibu;Gotte,There are so much to talk about... Let's grab some coffee.
+LevelNumber,NameA,PortraitA,MoneyA,CityA,NameB,PortraitB,MoneyB,CityB,CloudedCities
+1,Anzum,CharacterA,20,Girini,Negar,CharacterB,20,Mavimia,Fokulo;Culibi;Tuttuti;Yadibu;Gotte
+2,Şunti,CharacterA,40,Giervi,Mendi,CharacterB,40,Girini,Fokulo;Culibi;Tuttuti;Yadibu;Gotte
+3,Luli,CharacterA,80,Girini,Elfi,CharacterB,60,Culibi,Fokulo;Yadibu;Gotte
+4,Minu,CharacterA,120,Tuttuti,Dive,CharacterB,140,Gotte,Fokulo;Yadibu
+5,Yumi,CharacterA,200,Fokulo,Timi,CharacterB,200,Yadibu,

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using System; // Needed for DateTime
 
 public class DraggableFlight : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
@@ -11,51 +12,52 @@ public class DraggableFlight : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     private Transform mainCanvas;
     private GameObject placeholder;
 
+    private Vector2 originalSize; // NEW: We must remember the shop size!
+
     void Awake()
     {
         canvasGroup = GetComponent<CanvasGroup>();
         mainCanvas = GameObject.FindFirstObjectByType<Canvas>().transform;
+        originalSize = GetComponent<RectTransform>().sizeDelta;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        // THE LOCKDOWN FIX: Stop immediately if level is inactive
         if (LevelManager.instance != null && !LevelManager.instance.isLevelActive) return;
 
         parentAfterDrag = transform.parent;
-        int originalSiblingIndex = transform.GetSiblingIndex();
 
         placeholder = new GameObject("Placeholder");
         placeholder.transform.SetParent(parentAfterDrag);
-        placeholder.transform.SetSiblingIndex(originalSiblingIndex);
+        placeholder.transform.SetSiblingIndex(transform.GetSiblingIndex());
 
         RectTransform placeholderRect = placeholder.AddComponent<RectTransform>();
-        RectTransform myRect = GetComponent<RectTransform>();
-        placeholderRect.sizeDelta = myRect.sizeDelta;
+        placeholderRect.sizeDelta = originalSize;
 
         LayoutElement le = placeholder.AddComponent<LayoutElement>();
-        le.preferredWidth = myRect.sizeDelta.x;
-        le.preferredHeight = myRect.sizeDelta.y;
+        le.preferredWidth = originalSize.x;
+        le.preferredHeight = originalSize.y;
 
         transform.SetParent(mainCanvas);
         canvasGroup.blocksRaycasts = false;
         canvasGroup.alpha = 0.8f;
+
+        // Return to normal size while dragging!
+        GetComponent<RectTransform>().sizeDelta = originalSize;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        // THE LOCKDOWN FIX: Stop the drag from continuing if the level locked!
         if (LevelManager.instance != null && !LevelManager.instance.isLevelActive) return;
-
         transform.position = eventData.position;
 
-        if (parentAfterDrag != null && parentAfterDrag.GetComponent<VerticalLayoutGroup>() != null)
+        // Only do the sibling index swapping if we are hovering over the SHOP!
+        if (parentAfterDrag != null && parentAfterDrag.GetComponent<FlightDropZone>() != null)
         {
             if (placeholder.transform.parent != parentAfterDrag)
                 placeholder.transform.SetParent(parentAfterDrag);
 
             int newSiblingIndex = parentAfterDrag.childCount;
-
             for (int i = 0; i < parentAfterDrag.childCount; i++)
             {
                 Transform child = parentAfterDrag.GetChild(i);
@@ -64,18 +66,12 @@ public class DraggableFlight : MonoBehaviour, IBeginDragHandler, IDragHandler, I
                     if (eventData.position.y > child.position.y)
                     {
                         newSiblingIndex = i;
-                        if (placeholder.transform.GetSiblingIndex() < newSiblingIndex)
-                            newSiblingIndex--;
+                        if (placeholder.transform.GetSiblingIndex() < newSiblingIndex) newSiblingIndex--;
                         break;
                     }
                 }
             }
             placeholder.transform.SetSiblingIndex(newSiblingIndex);
-        }
-        else if (parentAfterDrag != null)
-        {
-            if (placeholder.transform.parent != parentAfterDrag)
-                placeholder.transform.SetParent(parentAfterDrag);
         }
     }
 
@@ -83,10 +79,41 @@ public class DraggableFlight : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     {
         if (LevelManager.instance != null && !LevelManager.instance.isLevelActive) return;
 
-        // THE NUCLEAR SNAP: Adding ', false' forces the card to visually snap 
-        // cleanly into the Drop Zone layout instead of floating!
         transform.SetParent(parentAfterDrag, false);
-        transform.SetSiblingIndex(placeholder.transform.GetSiblingIndex());
+
+        // Check if we dropped on a Timeline!
+        TimelineColumn timeline = parentAfterDrag.GetComponent<TimelineColumn>();
+        if (timeline != null)
+        {
+            // THE SHAPE SHIFT!
+            DateTime start = flightData.exactDeparture;
+            DateTime end = flightData.exactArrival;
+
+            float durationHours = (float)(end - start).TotalHours;
+            float newHeight = durationHours * timeline.pixelsPerHour;
+            float yPos = timeline.GetYPosition(start);
+
+            RectTransform rt = GetComponent<RectTransform>();
+
+            // Change anchors to top-center so it draws downwards
+            rt.anchorMin = new Vector2(0.5f, 1f);
+            rt.anchorMax = new Vector2(0.5f, 1f);
+            rt.pivot = new Vector2(0.5f, 1f);
+
+            // Morph the box!
+            rt.sizeDelta = new Vector2(originalSize.x, newHeight);
+            rt.anchoredPosition = new Vector2(0, yPos);
+        }
+        else
+        {
+            // We dropped back in the shop! Snap to the placeholder and restore anchors.
+            transform.SetSiblingIndex(placeholder.transform.GetSiblingIndex());
+            RectTransform rt = GetComponent<RectTransform>();
+            rt.anchorMin = new Vector2(0.5f, 0.5f);
+            rt.anchorMax = new Vector2(0.5f, 0.5f);
+            rt.pivot = new Vector2(0.5f, 0.5f);
+            rt.sizeDelta = originalSize;
+        }
 
         canvasGroup.blocksRaycasts = true;
         canvasGroup.alpha = 1f;

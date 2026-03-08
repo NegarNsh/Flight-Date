@@ -9,19 +9,23 @@ public class TimelineColumn : MonoBehaviour, IDropHandler, IPointerEnterHandler
     public enum PlayerSide { PlayerA, PlayerB }
     public PlayerSide mySide;
 
-    [Header("Timeline Settings")]
-    public float pixelsPerHour = 100f; // Set this to stretch the UI! 100 pixels = 1 hour.
+    [Header("Timeline Visual Settings")]
+    public float pixelsPerHour = 50f;
     public GameObject timeMarkerPrefab;
+    public GameObject dayMarkerPrefab;
+
+    [Header("Day Spacing (Edit these!)")]
+    public float topPadding = 20f;         // Space above the very first day
+    public float spaceBeforeNewDay = 50f;  // Space after 22:00, before the new Day text
+    public float spaceAfterDay = 30f;      // Space after the Day text, before the time starts
+
     public DateTime timelineStart;
 
     public void GenerateTimeline(List<Flight> levelFlights)
     {
-        // 1. Clean up old lines if we restart the level
         foreach (Transform child in transform) Destroy(child.gameObject);
-
         if (levelFlights.Count == 0) return;
 
-        // 2. Find the absolute earliest and latest times in the level!
         DateTime earliest = DateTime.MaxValue;
         DateTime latest = DateTime.MinValue;
 
@@ -31,39 +35,74 @@ public class TimelineColumn : MonoBehaviour, IDropHandler, IPointerEnterHandler
             if (flight.exactArrival > latest) latest = flight.exactArrival;
         }
 
-        // 3. THE MATH FIX: Force the start time to be an EVEN number!
         int startHour = earliest.Hour;
-        if (startHour % 2 != 0) startHour--; // If it's an odd hour (like 9), drop it down to 8!
-
-        // Subtract 2 hours for padding so there is empty space above the first ticket
+        if (startHour % 2 != 0) startHour--;
         timelineStart = earliest.Date.AddHours(startHour - 2);
 
         int endHour = latest.Hour;
-        if (endHour % 2 != 0) endHour++; // If odd, push it up to an even number for the end!
-
-        DateTime timelineEnd = latest.Date.AddHours(endHour + 2); // Add padding at the bottom
+        if (endHour % 2 != 0) endHour++;
+        DateTime timelineEnd = latest.Date.AddHours(endHour + 2);
 
         float totalHours = (float)(timelineEnd - timelineStart).TotalHours;
+        int totalDays = (timelineEnd.Date - timelineStart.Date).Days;
 
-        // 4. Resize the Content box so scrolling perfectly fits the whole day!
+        // 1. Calculate the exact total height including all our new spaces!
+        float totalHeight = topPadding + spaceAfterDay + (totalHours * pixelsPerHour) + (totalDays * (spaceBeforeNewDay + spaceAfterDay));
+
         RectTransform rt = GetComponent<RectTransform>();
-        rt.sizeDelta = new Vector2(rt.sizeDelta.x, totalHours * pixelsPerHour);
+        rt.sizeDelta = new Vector2(rt.sizeDelta.x, totalHeight);
 
-        // 5. Draw the Time Markers every 2 hours!
+        DateTime lastDayDrawn = DateTime.MinValue;
+
+        // 2. Draw the Markers using our Master Formula
         for (int i = 0; i <= totalHours; i += 2)
         {
+            DateTime currentTime = timelineStart.AddHours(i);
+
+            // Ask the Master Formula exactly where this time goes!
+            float currentY = GetYPosition(currentTime);
+
+            if (currentTime.Date > lastDayDrawn.Date)
+            {
+                lastDayDrawn = currentTime.Date;
+
+                if (dayMarkerPrefab != null)
+                {
+                    GameObject dayMarker = Instantiate(dayMarkerPrefab, this.transform);
+                    RectTransform dayRT = dayMarker.GetComponent<RectTransform>();
+
+                    // Place the Day text directly between the Before and After space!
+                    float dayY = currentY + spaceAfterDay;
+                    dayRT.anchoredPosition = new Vector2(0, dayY);
+
+                    TextMeshProUGUI dayText = dayMarker.GetComponentInChildren<TextMeshProUGUI>();
+                    if (dayText != null) dayText.text = currentTime.DayOfWeek.ToString();
+                }
+            }
+
             GameObject marker = Instantiate(timeMarkerPrefab, this.transform);
             RectTransform markerRT = marker.GetComponent<RectTransform>();
+            markerRT.anchoredPosition = new Vector2(0, currentY);
 
-            // Move it down the timeline
-            markerRT.anchoredPosition = new Vector2(0, -(i * pixelsPerHour));
-
-            // Set the text
             TextMeshProUGUI timeText = marker.GetComponentInChildren<TextMeshProUGUI>();
-            if (timeText != null) timeText.text = timelineStart.AddHours(i).ToString("H:mm");
+            if (timeText != null) timeText.text = currentTime.ToString("H:mm");
         }
     }
-    // --- DROP ZONE LOGIC ---
+
+    // --- THE MASTER FORMULA ---
+    // This perfectly calculates the Y coordinate while accounting for the day gaps!
+    public float GetYPosition(DateTime targetTime)
+    {
+        float basePixels = (float)(targetTime - timelineStart).TotalHours * pixelsPerHour;
+        int dayCrossings = (targetTime.Date - timelineStart.Date).Days; // How many midnights did we cross?
+
+        float offset = topPadding;
+        offset += spaceAfterDay; // Space for the very first day
+        offset += dayCrossings * (spaceBeforeNewDay + spaceAfterDay); // Add the gaps for new days!
+
+        return -(basePixels + offset); // Negative because UI goes downwards
+    }
+
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (eventData.pointerDrag != null)
@@ -80,11 +119,5 @@ public class TimelineColumn : MonoBehaviour, IDropHandler, IPointerEnterHandler
             DraggableFlight flight = eventData.pointerDrag.GetComponent<DraggableFlight>();
             if (flight != null) flight.parentAfterDrag = this.transform;
         }
-    }
-
-    // The Magic Helper Function: Tells the flight exactly where to snap!
-    public float GetYPosition(DateTime flightTime)
-    {
-        return -((float)(flightTime - timelineStart).TotalHours * pixelsPerHour);
     }
 }

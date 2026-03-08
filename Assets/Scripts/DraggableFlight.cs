@@ -82,6 +82,7 @@ public class DraggableFlight : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         transform.SetParent(parentAfterDrag, false);
 
         // Check if we dropped on a Timeline!
+        // Check if we dropped on a Timeline!
         TimelineColumn timeline = parentAfterDrag.GetComponent<TimelineColumn>();
         if (timeline != null)
         {
@@ -89,20 +90,22 @@ public class DraggableFlight : MonoBehaviour, IBeginDragHandler, IDragHandler, I
             DateTime start = flightData.exactDeparture;
             DateTime end = flightData.exactArrival;
 
-            float durationHours = (float)(end - start).TotalHours;
-            float newHeight = durationHours * timeline.pixelsPerHour;
-            float yPos = timeline.GetYPosition(start);
+            // Ask the timeline exactly where the top and bottom of the ticket belong!
+            float yPosStart = timeline.GetYPosition(start);
+            float yPosEnd = timeline.GetYPosition(end);
+
+            // The absolute difference between the start and end is the true height!
+            // This seamlessly stretches the ticket over the Day text if it crosses midnight!
+            float newHeight = Mathf.Abs(yPosEnd - yPosStart);
 
             RectTransform rt = GetComponent<RectTransform>();
 
-            // Change anchors to top-center so it draws downwards
             rt.anchorMin = new Vector2(0.5f, 1f);
             rt.anchorMax = new Vector2(0.5f, 1f);
             rt.pivot = new Vector2(0.5f, 1f);
 
-            // Morph the box!
             rt.sizeDelta = new Vector2(originalSize.x, newHeight);
-            rt.anchoredPosition = new Vector2(0, yPos);
+            rt.anchoredPosition = new Vector2(0, yPosStart);
         }
         else
         {

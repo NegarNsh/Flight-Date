@@ -1,0 +1,676 @@
+fileFormatVersion: 2
+guid: 24ef528734bbd7647a116b7fd8ba8903
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7391428644490898141
+    second: Line_Mavimia_Girini_0
+  - first:
+      213: 1368280890421221604
+    second: Line_Mavimia_Girini_1
+  - first:
+      213: 5385951030921068138
+    second: Line_Mavimia_Girini_2
+  - first:
+      213: 616932575461345789
+    second: Line_Mavimia_Girini_3
+  - first:
+      213: 5851531114171278710
+    second: Line_Mavimia_Girini_4
+  - first:
+      213: 5570216351940437429
+    second: Line_Mavimia_Girini_5
+  - first:
+      213: -7499791860594913239
+    second: Line_Mavimia_Girini_6
+  - first:
+      213: 7765440594174303363
+    second: Line_Mavimia_Girini_7
+  - first:
+      213: 2216891144535678750
+    second: Line_Mavimia_Girini_8
+  - first:
+      213: -2809937126121466538
+    second: Line_Mavimia_Girini_9
+  - first:
+      213: 514802706675972515
+    second: Line_Mavimia_Girini_10
+  - first:
+      213: -326550832364148115
+    second: Line_Mavimia_Girini_11
+  - first:
+      213: 7454707165059992572
+    second: Line_Mavimia_Girini_12
+  - first:
+      213: 4795322180381159066
+    second: Line_Mavimia_Girini_13
+  - first:
+      213: 2998670265866853218
+    second: Line_Mavimia_Girini_14
+  - first:
+      213: -3514070997088444613
+    second: Line_Mavimia_Girini_15
+  - first:
+      213: 6183485286523284548
+    second: Line_Mavimia_Girini_16
+  - first:
+      213: 707719843919410117
+    second: Line_Mavimia_Girini_17
+  - first:
+      213: -8299485939376868956
+    second: Line_Mavimia_Girini_18
+  - first:
+      213: 5408330505146186937
+    second: Line_Mavimia_Girini_19
+  - first:
+      213: -984041694141572961
+    second: Line_Mavimia_Girini_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Line_Mavimia_Girini_0
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 716
+        width: 43
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 325197e2fce5c6990800000000000000
+      internalID: -7391428644490898141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Girini_1
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 716
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e8138a683c1df210800000000000000
+      internalID: 1368280890421221604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Girini_2
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 705
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ef2b73dedbeba40800000000000000
+      internalID: 5385951030921068138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Girini_3
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 695
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df98db2a8e8cf8800800000000000000
+      internalID: 616932575461345789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Girini_4
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 685
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 675235cab80d43150800000000000000
+      internalID: 5851531114171278710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Girini_5
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 675
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b56b7382426d4d40800000000000000
+      internalID: 5570216351940437429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Girini_6
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 665
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 920dfd3d9036be790800000000000000
+      internalID: -7499791860594913239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Girini_7
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 655
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38c582cc31364cb60800000000000000
+      internalID: 7765440594174303363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Girini_8
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 646
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1f12c710caf3ce10800000000000000
+      internalID: 2216891144535678750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Girini_9
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 636
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 655195c42191109d0800000000000000
+      internalID: -2809937126121466538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Girini_10
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 627
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a9b4dc8552f42700800000000000000
+      internalID: 514802706675972515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Girini_11
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 617
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6aa3d38fbbd77bf0800000000000000
+      internalID: -326550832364148115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Girini_12
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 608
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfbc5fd7ba0747760800000000000000
+      internalID: 7454707165059992572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Girini_13
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 599
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9eab29cd186c8240800000000000000
+      internalID: 4795322180381159066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Girini_14
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 590
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26b158b18ba6d9920800000000000000
+      internalID: 2998670265866853218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Girini_15
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 581
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f5a07eb038b3fc0800000000000000
+      internalID: -3514070997088444613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Girini_16
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 573
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44c23194b1720d550800000000000000
+      internalID: 6183485286523284548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Girini_17
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 564
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c3bf49c27352d900800000000000000
+      internalID: 707719843919410117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Girini_18
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 556
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a1b71db28d42dc80800000000000000
+      internalID: -8299485939376868956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Girini_19
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 548
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bcb52b90ff3e0b40800000000000000
+      internalID: 5408330505146186937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Girini_20
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 542
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f989488fa4bf752f0800000000000000
+      internalID: -984041694141572961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Line_Mavimia_Girini_0: -7391428644490898141
+      Line_Mavimia_Girini_1: 1368280890421221604
+      Line_Mavimia_Girini_10: 514802706675972515
+      Line_Mavimia_Girini_11: -326550832364148115
+      Line_Mavimia_Girini_12: 7454707165059992572
+      Line_Mavimia_Girini_13: 4795322180381159066
+      Line_Mavimia_Girini_14: 2998670265866853218
+      Line_Mavimia_Girini_15: -3514070997088444613
+      Line_Mavimia_Girini_16: 6183485286523284548
+      Line_Mavimia_Girini_17: 707719843919410117
+      Line_Mavimia_Girini_18: -8299485939376868956
+      Line_Mavimia_Girini_19: 5408330505146186937
+      Line_Mavimia_Girini_2: 5385951030921068138
+      Line_Mavimia_Girini_20: -984041694141572961
+      Line_Mavimia_Girini_3: 616932575461345789
+      Line_Mavimia_Girini_4: 5851531114171278710
+      Line_Mavimia_Girini_5: 5570216351940437429
+      Line_Mavimia_Girini_6: -7499791860594913239
+      Line_Mavimia_Girini_7: 7765440594174303363
+      Line_Mavimia_Girini_8: 2216891144535678750
+      Line_Mavimia_Girini_9: -2809937126121466538
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

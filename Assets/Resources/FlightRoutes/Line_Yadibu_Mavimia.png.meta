@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 12d712d2496e9f34094e61825a41e2a6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4099657030306472908
+    second: Line_Yadibu_Mavimia_0
+  - first:
+      213: -7405665501289457834
+    second: Line_Yadibu_Mavimia_1
+  - first:
+      213: 278545721939986277
+    second: Line_Yadibu_Mavimia_2
+  - first:
+      213: 8002190142632980303
+    second: Line_Yadibu_Mavimia_3
+  - first:
+      213: 9074149968311883492
+    second: Line_Yadibu_Mavimia_4
+  - first:
+      213: 7033851919497511735
+    second: Line_Yadibu_Mavimia_5
+  - first:
+      213: 8648058855733476872
+    second: Line_Yadibu_Mavimia_6
+  - first:
+      213: 8589303743846918256
+    second: Line_Yadibu_Mavimia_7
+  - first:
+      213: 1394650533768910892
+    second: Line_Yadibu_Mavimia_8
+  - first:
+      213: -8702571182306727002
+    second: Line_Yadibu_Mavimia_9
+  - first:
+      213: 3498899836301832462
+    second: Line_Yadibu_Mavimia_10
+  - first:
+      213: -1543520608795503560
+    second: Line_Yadibu_Mavimia_11
+  - first:
+      213: -4929040468490496137
+    second: Line_Yadibu_Mavimia_12
+  - first:
+      213: 2640957371982282272
+    second: Line_Yadibu_Mavimia_13
+  - first:
+      213: 4404843344395582030
+    second: Line_Yadibu_Mavimia_14
+  - first:
+      213: 3346884138807985591
+    second: Line_Yadibu_Mavimia_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Line_Yadibu_Mavimia_0
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 532
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43c56afd6a71b17c0800000000000000
+      internalID: -4099657030306472908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Mavimia_1
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 536
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 657d646a67ac93990800000000000000
+      internalID: -7405665501289457834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Mavimia_2
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 539
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56700f9bbd79dd300800000000000000
+      internalID: 278545721939986277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Mavimia_3
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 542
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4f65cc898d7d0f60800000000000000
+      internalID: 8002190142632980303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Mavimia_4
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 543
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e61adbb15bdded70800000000000000
+      internalID: 9074149968311883492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Mavimia_5
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 530
+        width: 45
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7334958cd034d9160800000000000000
+      internalID: 7033851919497511735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Mavimia_6
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 519
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e3aacb5b3140870800000000000000
+      internalID: 8648058855733476872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Mavimia_7
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 524
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 078ade73f36533770800000000000000
+      internalID: 8589303743846918256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Mavimia_8
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 528
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c28da13754bca5310800000000000000
+      internalID: 1394650533768910892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Mavimia_9
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 505
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab6e0e2e914a3780800000000000000
+      internalID: -8702571182306727002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Mavimia_10
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 510
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e017177fcd69e8030800000000000000
+      internalID: 3498899836301832462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Mavimia_11
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 515
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 834df392f20549ae0800000000000000
+      internalID: -1543520608795503560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Mavimia_12
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 492
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77759102fc7889bb0800000000000000
+      internalID: -4929040468490496137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Mavimia_13
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 493
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02ef3f7ccb096a420800000000000000
+      internalID: 2640957371982282272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Mavimia_14
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 497
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4a31f11fa5212d30800000000000000
+      internalID: 4404843344395582030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Mavimia_15
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 501
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b50a064465827e20800000000000000
+      internalID: 3346884138807985591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Line_Yadibu_Mavimia_0: -4099657030306472908
+      Line_Yadibu_Mavimia_1: -7405665501289457834
+      Line_Yadibu_Mavimia_10: 3498899836301832462
+      Line_Yadibu_Mavimia_11: -1543520608795503560
+      Line_Yadibu_Mavimia_12: -4929040468490496137
+      Line_Yadibu_Mavimia_13: 2640957371982282272
+      Line_Yadibu_Mavimia_14: 4404843344395582030
+      Line_Yadibu_Mavimia_15: 3346884138807985591
+      Line_Yadibu_Mavimia_2: 278545721939986277
+      Line_Yadibu_Mavimia_3: 8002190142632980303
+      Line_Yadibu_Mavimia_4: 9074149968311883492
+      Line_Yadibu_Mavimia_5: 7033851919497511735
+      Line_Yadibu_Mavimia_6: 8648058855733476872
+      Line_Yadibu_Mavimia_7: 8589303743846918256
+      Line_Yadibu_Mavimia_8: 1394650533768910892
+      Line_Yadibu_Mavimia_9: -8702571182306727002
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

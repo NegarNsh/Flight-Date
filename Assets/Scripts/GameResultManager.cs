@@ -1,6 +1,6 @@
-using UnityEngine;
 using TMPro; // NEW: We need this to talk to the Text block!
-
+using UnityEngine;
+using System.Collections.Generic;
 public class GameResultManager : MonoBehaviour
 {
     public static GameResultManager instance;
@@ -41,14 +41,25 @@ public class GameResultManager : MonoBehaviour
         }
     }
 
-    private string GetFinalDestination(Transform dropZone, string defaultCity)
+    public string GetFinalDestination(Transform dropZone, string defaultCity)
     {
-        if (dropZone.childCount == 0) return defaultCity;
+        // 1. Grab our smart Timeline script
+        TimelineColumn timeline = dropZone.GetComponent<TimelineColumn>();
 
-        Transform lastCard = dropZone.GetChild(dropZone.childCount - 1);
-        DraggableFlight flight = lastCard.GetComponent<DraggableFlight>();
+        if (timeline != null)
+        {
+            // 2. Ask the timeline for ONLY the valid flight tickets (this ignores the time/day markers!)
+            List<DraggableFlight> sortedTickets = timeline.GetSortedTickets();
 
-        return flight.flightData.destination;
+            // 3. If they placed at least one ticket, their final location is the destination of the very last ticket.
+            if (sortedTickets.Count > 0)
+            {
+                return sortedTickets[sortedTickets.Count - 1].flightData.destination;
+            }
+        }
+
+        // 4. If there are no tickets at all, they never left their starting city!
+        return defaultCity;
     }
 
     public void HideAllScreens()

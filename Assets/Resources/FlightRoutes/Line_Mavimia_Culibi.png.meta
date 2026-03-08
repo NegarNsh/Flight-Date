@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: 66ba6b3f42e689c43ba32bff731eb6bc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2342337715731005003
+    second: Line_Mavimia_Culibi_0
+  - first:
+      213: -2050614112045013169
+    second: Line_Mavimia_Culibi_1
+  - first:
+      213: 3256427901764973633
+    second: Line_Mavimia_Culibi_2
+  - first:
+      213: 7919391665870921709
+    second: Line_Mavimia_Culibi_3
+  - first:
+      213: 8424152397191812273
+    second: Line_Mavimia_Culibi_4
+  - first:
+      213: 8477248425463705846
+    second: Line_Mavimia_Culibi_5
+  - first:
+      213: -7615377648248449825
+    second: Line_Mavimia_Culibi_6
+  - first:
+      213: 493206315495031810
+    second: Line_Mavimia_Culibi_7
+  - first:
+      213: 8523654880443838672
+    second: Line_Mavimia_Culibi_8
+  - first:
+      213: 1139684960082199846
+    second: Line_Mavimia_Culibi_9
+  - first:
+      213: -7622611612100111474
+    second: Line_Mavimia_Culibi_10
+  - first:
+      213: 8802550962428838759
+    second: Line_Mavimia_Culibi_11
+  - first:
+      213: -4303409048575520113
+    second: Line_Mavimia_Culibi_12
+  - first:
+      213: -7717129246782987344
+    second: Line_Mavimia_Culibi_13
+  - first:
+      213: -3650928727505357336
+    second: Line_Mavimia_Culibi_14
+  - first:
+      213: -713619728110029108
+    second: Line_Mavimia_Culibi_15
+  - first:
+      213: 8691770778303808059
+    second: Line_Mavimia_Culibi_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Line_Mavimia_Culibi_0
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 878
+        width: 44
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b18addf1485e7fd0800000000000000
+      internalID: -2342337715731005003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Culibi_1
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 873
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4767286451ca83e0800000000000000
+      internalID: -2050614112045013169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Culibi_2
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 858
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1443f516ce7213d20800000000000000
+      internalID: 3256427901764973633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Culibi_3
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 842
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: defdc69e2c457ed60800000000000000
+      internalID: 7919391665870921709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Culibi_4
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 824
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b49f50e8f998e470800000000000000
+      internalID: 8424152397191812273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Culibi_5
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 805
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f0f080578c35a570800000000000000
+      internalID: 8477248425463705846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Culibi_6
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 785
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd493bd706eb05690800000000000000
+      internalID: -7615377648248449825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Culibi_7
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 764
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2048f04e78838d600800000000000000
+      internalID: 493206315495031810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Culibi_8
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 742
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d031e814fa1a4670800000000000000
+      internalID: 8523654880443838672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Culibi_9
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 719
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6250e81de69f0df00800000000000000
+      internalID: 1139684960082199846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Culibi_10
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 695
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e835108002b073690800000000000000
+      internalID: -7622611612100111474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Culibi_11
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 671
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76308d06671f82a70800000000000000
+      internalID: 8802550962428838759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Culibi_12
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 645
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f82547055483744c0800000000000000
+      internalID: -4303409048575520113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Culibi_13
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 619
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b3e8bf46df37e490800000000000000
+      internalID: -7717129246782987344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Culibi_14
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 592
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e536c07aab455dc0800000000000000
+      internalID: -3650928727505357336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Culibi_15
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 564
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc67a4163a6b816f0800000000000000
+      internalID: -713619728110029108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Culibi_16
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 544
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b324bedc87f5f9870800000000000000
+      internalID: 8691770778303808059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Line_Mavimia_Culibi_0: -2342337715731005003
+      Line_Mavimia_Culibi_1: -2050614112045013169
+      Line_Mavimia_Culibi_10: -7622611612100111474
+      Line_Mavimia_Culibi_11: 8802550962428838759
+      Line_Mavimia_Culibi_12: -4303409048575520113
+      Line_Mavimia_Culibi_13: -7717129246782987344
+      Line_Mavimia_Culibi_14: -3650928727505357336
+      Line_Mavimia_Culibi_15: -713619728110029108
+      Line_Mavimia_Culibi_16: 8691770778303808059
+      Line_Mavimia_Culibi_2: 3256427901764973633
+      Line_Mavimia_Culibi_3: 7919391665870921709
+      Line_Mavimia_Culibi_4: 8424152397191812273
+      Line_Mavimia_Culibi_5: 8477248425463705846
+      Line_Mavimia_Culibi_6: -7615377648248449825
+      Line_Mavimia_Culibi_7: 493206315495031810
+      Line_Mavimia_Culibi_8: 8523654880443838672
+      Line_Mavimia_Culibi_9: 1139684960082199846
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

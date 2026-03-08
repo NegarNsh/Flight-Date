@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: a02c96904983bec46b69b4425d33d2b7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2314967953814851544
+    second: Line_Gotte_Culibi_0
+  - first:
+      213: 6048012398673292110
+    second: Line_Gotte_Culibi_1
+  - first:
+      213: 7877276884241275249
+    second: Line_Gotte_Culibi_2
+  - first:
+      213: -5654413266352918190
+    second: Line_Gotte_Culibi_3
+  - first:
+      213: 1813397814651113800
+    second: Line_Gotte_Culibi_4
+  - first:
+      213: -5163642910742240630
+    second: Line_Gotte_Culibi_5
+  - first:
+      213: 6498240158247921956
+    second: Line_Gotte_Culibi_6
+  - first:
+      213: 3895170270403783669
+    second: Line_Gotte_Culibi_7
+  - first:
+      213: 448604175617828520
+    second: Line_Gotte_Culibi_8
+  - first:
+      213: 2930528248601313340
+    second: Line_Gotte_Culibi_9
+  - first:
+      213: -560692706354403571
+    second: Line_Gotte_Culibi_10
+  - first:
+      213: 2125666696729338488
+    second: Line_Gotte_Culibi_11
+  - first:
+      213: -3971063727568315398
+    second: Line_Gotte_Culibi_12
+  - first:
+      213: 5531433466339376929
+    second: Line_Gotte_Culibi_13
+  - first:
+      213: -5350071811519793397
+    second: Line_Gotte_Culibi_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Line_Gotte_Culibi_0
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 869
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 820f37649e49fdfd0800000000000000
+      internalID: -2314967953814851544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Culibi_1
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 845
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4b641c9b3bdee350800000000000000
+      internalID: 6048012398673292110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Culibi_2
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 819
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 179d8923795b15d60800000000000000
+      internalID: 7877276884241275249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Culibi_3
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 792
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25137c5b71d7781b0800000000000000
+      internalID: -5654413266352918190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Culibi_4
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 765
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 841dfb264bb7a2910800000000000000
+      internalID: 1813397814651113800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Culibi_5
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 737
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a82ae3e712e0758b0800000000000000
+      internalID: -5163642910742240630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Culibi_6
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 709
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429ab89aef26e2a50800000000000000
+      internalID: 6498240158247921956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Culibi_7
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 680
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb641339bc6e0630800000000000000
+      internalID: 3895170270403783669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Culibi_8
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 651
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a62574fe13c93600800000000000000
+      internalID: 448604175617828520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Culibi_9
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 621
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c30012e5ae35ba820800000000000000
+      internalID: 2930528248601313340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Culibi_10
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 591
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d07e79944f40838f0800000000000000
+      internalID: -560692706354403571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Culibi_11
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 560
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8722e613992ef7d10800000000000000
+      internalID: 2125666696729338488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Culibi_12
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 530
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afb1ad15492f3e8c0800000000000000
+      internalID: -3971063727568315398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Culibi_13
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 498
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12fbddb4e6993cc40800000000000000
+      internalID: 5531433466339376929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Culibi_14
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 477
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b073887880ab0c5b0800000000000000
+      internalID: -5350071811519793397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Line_Gotte_Culibi_0: -2314967953814851544
+      Line_Gotte_Culibi_1: 6048012398673292110
+      Line_Gotte_Culibi_10: -560692706354403571
+      Line_Gotte_Culibi_11: 2125666696729338488
+      Line_Gotte_Culibi_12: -3971063727568315398
+      Line_Gotte_Culibi_13: 5531433466339376929
+      Line_Gotte_Culibi_14: -5350071811519793397
+      Line_Gotte_Culibi_2: 7877276884241275249
+      Line_Gotte_Culibi_3: -5654413266352918190
+      Line_Gotte_Culibi_4: 1813397814651113800
+      Line_Gotte_Culibi_5: -5163642910742240630
+      Line_Gotte_Culibi_6: 6498240158247921956
+      Line_Gotte_Culibi_7: 3895170270403783669
+      Line_Gotte_Culibi_8: 448604175617828520
+      Line_Gotte_Culibi_9: 2930528248601313340
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

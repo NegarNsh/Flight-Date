@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 88437778b66ea4143ba68ac0074107bc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4776582125030195197
+    second: Line_Mavimia_Tuttuti_0
+  - first:
+      213: 8589125841238065616
+    second: Line_Mavimia_Tuttuti_1
+  - first:
+      213: 3857166386906588852
+    second: Line_Mavimia_Tuttuti_2
+  - first:
+      213: 5242194075133427667
+    second: Line_Mavimia_Tuttuti_3
+  - first:
+      213: 5942482817657171469
+    second: Line_Mavimia_Tuttuti_4
+  - first:
+      213: 3057343601807866381
+    second: Line_Mavimia_Tuttuti_5
+  - first:
+      213: -2313587561958770333
+    second: Line_Mavimia_Tuttuti_6
+  - first:
+      213: -6668383820616593910
+    second: Line_Mavimia_Tuttuti_7
+  - first:
+      213: -5338351530743861405
+    second: Line_Mavimia_Tuttuti_8
+  - first:
+      213: 3893447237611362552
+    second: Line_Mavimia_Tuttuti_9
+  - first:
+      213: 7009349646979508260
+    second: Line_Mavimia_Tuttuti_10
+  - first:
+      213: -1556227809608825790
+    second: Line_Mavimia_Tuttuti_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Line_Mavimia_Tuttuti_0
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 600
+        width: 45
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 300481d5ddb26bdb0800000000000000
+      internalID: -4776582125030195197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Tuttuti_1
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 619
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d18f1a0274b23770800000000000000
+      internalID: 8589125841238065616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Tuttuti_2
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 624
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b6e42b8468678530800000000000000
+      internalID: 3857166386906588852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Tuttuti_3
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 626
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3df3cfbacb300c840800000000000000
+      internalID: 5242194075133427667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Tuttuti_4
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 625
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0e615653a0f77250800000000000000
+      internalID: 5942482817657171469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Tuttuti_5
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 622
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a321eaecddd6a20800000000000000
+      internalID: 3057343601807866381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Tuttuti_6
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 615
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3697facce5c74efd0800000000000000
+      internalID: -2313587561958770333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Tuttuti_7
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 606
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0e8f2aee342573a0800000000000000
+      internalID: -6668383820616593910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Tuttuti_8
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 594
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36f69db019d5ae5b0800000000000000
+      internalID: -5338351530743861405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Tuttuti_9
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 579
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f81d8d52ad480630800000000000000
+      internalID: 3893447237611362552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Tuttuti_10
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 559
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42829b6ed56364160800000000000000
+      internalID: 7009349646979508260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Mavimia_Tuttuti_11
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 543
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2448eaa6d0b276ae0800000000000000
+      internalID: -1556227809608825790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Line_Mavimia_Tuttuti_0: -4776582125030195197
+      Line_Mavimia_Tuttuti_1: 8589125841238065616
+      Line_Mavimia_Tuttuti_10: 7009349646979508260
+      Line_Mavimia_Tuttuti_11: -1556227809608825790
+      Line_Mavimia_Tuttuti_2: 3857166386906588852
+      Line_Mavimia_Tuttuti_3: 5242194075133427667
+      Line_Mavimia_Tuttuti_4: 5942482817657171469
+      Line_Mavimia_Tuttuti_5: 3057343601807866381
+      Line_Mavimia_Tuttuti_6: -2313587561958770333
+      Line_Mavimia_Tuttuti_7: -6668383820616593910
+      Line_Mavimia_Tuttuti_8: -5338351530743861405
+      Line_Mavimia_Tuttuti_9: 3893447237611362552
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

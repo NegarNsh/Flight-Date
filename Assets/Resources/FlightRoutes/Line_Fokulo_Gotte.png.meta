@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: 313ffbaaa2109dd4ba23629a3044022a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3818098903945472028
+    second: Line_Fokulo_Gotte_0
+  - first:
+      213: 8923549670719614497
+    second: Line_Fokulo_Gotte_1
+  - first:
+      213: -6165893894209247802
+    second: Line_Fokulo_Gotte_2
+  - first:
+      213: -1298709306581881728
+    second: Line_Fokulo_Gotte_3
+  - first:
+      213: 8630974808212946508
+    second: Line_Fokulo_Gotte_4
+  - first:
+      213: 190275295354022376
+    second: Line_Fokulo_Gotte_5
+  - first:
+      213: -3649050884839984919
+    second: Line_Fokulo_Gotte_6
+  - first:
+      213: 5830821599579820891
+    second: Line_Fokulo_Gotte_7
+  - first:
+      213: -7061115778746647083
+    second: Line_Fokulo_Gotte_8
+  - first:
+      213: -4407943696645173694
+    second: Line_Fokulo_Gotte_9
+  - first:
+      213: 6003167633810173
+    second: Line_Fokulo_Gotte_10
+  - first:
+      213: 5590185026450500205
+    second: Line_Fokulo_Gotte_11
+  - first:
+      213: 67166975230546348
+    second: Line_Fokulo_Gotte_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Line_Fokulo_Gotte_0
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 830
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c186af659bc9cf430800000000000000
+      internalID: 3818098903945472028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Fokulo_Gotte_1
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 802
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12eebc28521d6db70800000000000000
+      internalID: 8923549670719614497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Fokulo_Gotte_2
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 771
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c568e8eb285e6aa0800000000000000
+      internalID: -6165893894209247802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Fokulo_Gotte_3
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 740
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08c61ba34ce0afde0800000000000000
+      internalID: -1298709306581881728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Fokulo_Gotte_4
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 708
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4eb0e4fbd167c770800000000000000
+      internalID: 8630974808212946508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Fokulo_Gotte_5
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 676
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e9eb1d7f5ef3a200800000000000000
+      internalID: 190275295354022376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Fokulo_Gotte_6
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 645
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e0b9c1cd87fb5dc0800000000000000
+      internalID: -3649050884839984919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Fokulo_Gotte_7
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 615
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5351af0a5d3be050800000000000000
+      internalID: 5830821599579820891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Fokulo_Gotte_8
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 587
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dd76e15c90e10e90800000000000000
+      internalID: -7061115778746647083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Fokulo_Gotte_9
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 561
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24eca8bef86d3d2c0800000000000000
+      internalID: -4407943696645173694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Fokulo_Gotte_10
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 536
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df2275269d3551000800000000000000
+      internalID: 6003167633810173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Fokulo_Gotte_11
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 478
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6a2a4ad9a3549d40800000000000000
+      internalID: 5590185026450500205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Fokulo_Gotte_12
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 513
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca111431200aee000800000000000000
+      internalID: 67166975230546348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Line_Fokulo_Gotte_0: 3818098903945472028
+      Line_Fokulo_Gotte_1: 8923549670719614497
+      Line_Fokulo_Gotte_10: 6003167633810173
+      Line_Fokulo_Gotte_11: 5590185026450500205
+      Line_Fokulo_Gotte_12: 67166975230546348
+      Line_Fokulo_Gotte_2: -6165893894209247802
+      Line_Fokulo_Gotte_3: -1298709306581881728
+      Line_Fokulo_Gotte_4: 8630974808212946508
+      Line_Fokulo_Gotte_5: 190275295354022376
+      Line_Fokulo_Gotte_6: -3649050884839984919
+      Line_Fokulo_Gotte_7: 5830821599579820891
+      Line_Fokulo_Gotte_8: -7061115778746647083
+      Line_Fokulo_Gotte_9: -4407943696645173694
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

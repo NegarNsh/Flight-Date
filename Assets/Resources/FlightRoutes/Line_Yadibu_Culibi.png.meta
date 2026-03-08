@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: 03d635eb53ce6f94e8a04c7181363f58
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5806455383111761551
+    second: Line_Yadibu_Culibi_0
+  - first:
+      213: 6651655691485704599
+    second: Line_Yadibu_Culibi_1
+  - first:
+      213: -2606826164588373137
+    second: Line_Yadibu_Culibi_2
+  - first:
+      213: -5020830832406765093
+    second: Line_Yadibu_Culibi_3
+  - first:
+      213: 7855882608234331818
+    second: Line_Yadibu_Culibi_4
+  - first:
+      213: 2285978854082612220
+    second: Line_Yadibu_Culibi_5
+  - first:
+      213: 5749879069012509830
+    second: Line_Yadibu_Culibi_6
+  - first:
+      213: 2473884969785709426
+    second: Line_Yadibu_Culibi_7
+  - first:
+      213: -8250299173270621798
+    second: Line_Yadibu_Culibi_8
+  - first:
+      213: -7859561667399919012
+    second: Line_Yadibu_Culibi_9
+  - first:
+      213: -6857243212528403415
+    second: Line_Yadibu_Culibi_10
+  - first:
+      213: 982717555797869620
+    second: Line_Yadibu_Culibi_11
+  - first:
+      213: -4593448696114258366
+    second: Line_Yadibu_Culibi_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Line_Yadibu_Culibi_0
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 864
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8ef782386ca49050800000000000000
+      internalID: 5806455383111761551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Culibi_1
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 835
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 791f5330c9d6f4c50800000000000000
+      internalID: 6651655691485704599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Culibi_2
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 805
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b14843a61b2dbd0800000000000000
+      internalID: -2606826164588373137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Culibi_3
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 774
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd1e01d95fc625ab0800000000000000
+      internalID: -5020830832406765093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Culibi_4
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 743
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaef9f42c93b50d60800000000000000
+      internalID: 7855882608234331818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Culibi_5
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 711
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb06a9f7ad69bf10800000000000000
+      internalID: 2285978854082612220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Culibi_6
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 679
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 684c1f19c8cabcf40800000000000000
+      internalID: 5749879069012509830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Culibi_7
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 646
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2735147d541055220800000000000000
+      internalID: 2473884969785709426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Culibi_8
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 613
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9171862d9c018d80800000000000000
+      internalID: -8250299173270621798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Culibi_9
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 581
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5ad9542e4a3de290800000000000000
+      internalID: -7859561667399919012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Culibi_10
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 548
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92c39c221ad26d0a0800000000000000
+      internalID: -6857243212528403415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Culibi_11
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 515
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4344fdb096053ad00800000000000000
+      internalID: 982717555797869620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Culibi_12
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 493
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24ed02e7fbac040c0800000000000000
+      internalID: -4593448696114258366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Line_Yadibu_Culibi_0: 5806455383111761551
+      Line_Yadibu_Culibi_1: 6651655691485704599
+      Line_Yadibu_Culibi_10: -6857243212528403415
+      Line_Yadibu_Culibi_11: 982717555797869620
+      Line_Yadibu_Culibi_12: -4593448696114258366
+      Line_Yadibu_Culibi_2: -2606826164588373137
+      Line_Yadibu_Culibi_3: -5020830832406765093
+      Line_Yadibu_Culibi_4: 7855882608234331818
+      Line_Yadibu_Culibi_5: 2285978854082612220
+      Line_Yadibu_Culibi_6: 5749879069012509830
+      Line_Yadibu_Culibi_7: 2473884969785709426
+      Line_Yadibu_Culibi_8: -8250299173270621798
+      Line_Yadibu_Culibi_9: -7859561667399919012
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

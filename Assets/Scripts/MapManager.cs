@@ -31,7 +31,6 @@ public class MapManager : MonoBehaviour
     private string startCityA;
     private string startCityB;
 
-    // NEW: The "Memory" of the map!
     private Dictionary<string, Image> activeLines = new Dictionary<string, Image>();
 
     void Awake()
@@ -51,30 +50,38 @@ public class MapManager : MonoBehaviour
         if (nodeB != null) { avatarB.position = nodeB.position; avatarB.gameObject.SetActive(true); }
     }
 
-    public void SetupClouds(List<string> cloudedCities) { /* Same as before */ }
+    public void SetupClouds(List<string> cloudedCities)
+    {
+        if (cloudsParent != null)
+        {
+            foreach (Transform cloud in cloudsParent) { cloud.gameObject.SetActive(cloudedCities.Contains(cloud.name)); }
+        }
+        if (mapNodesParent != null)
+        {
+            foreach (Transform node in mapNodesParent) { node.gameObject.SetActive(!cloudedCities.Contains(node.name)); }
+        }
+    }
 
     public void ClearAllLines()
     {
-        activeLines.Clear(); // Wipe the memory
+        activeLines.Clear();
         if (flightLinesFolder != null)
         {
             foreach (Transform child in flightLinesFolder) Destroy(child.gameObject);
         }
     }
 
-    // --- THE UPGRADED REFRESH SYSTEM ---
     public void RefreshMap()
     {
         List<string> requiredLines = new List<string>();
 
-        // 1. Calculate exactly what lines SHOULD be on the map
+        // Notice we are correctly asking for GetSortedTickets() now!
         if (timelineA != null && !string.IsNullOrEmpty(startCityA))
-            ProcessTimeline(timelineA.GetSortedFlights(), startCityA, colorPlayerA, requiredLines, "PlayerA");
+            ProcessTimeline(timelineA.GetSortedTickets(), startCityA, colorPlayerA, requiredLines, TimelineColumn.PlayerSide.PlayerA);
 
         if (timelineB != null && !string.IsNullOrEmpty(startCityB))
-            ProcessTimeline(timelineB.GetSortedFlights(), startCityB, colorPlayerB, requiredLines, "PlayerB");
+            ProcessTimeline(timelineB.GetSortedTickets(), startCityB, colorPlayerB, requiredLines, TimelineColumn.PlayerSide.PlayerB);
 
-        // 2. Compare memory against required lines. If a line is no longer needed, animate it backwards!
         List<string> linesToRemove = new List<string>();
         foreach (var memory in activeLines)
         {
@@ -85,25 +92,28 @@ public class MapManager : MonoBehaviour
             }
         }
 
-        // Clean up the memory
         foreach (string key in linesToRemove) activeLines.Remove(key);
     }
 
-    private void ProcessTimeline(List<Flight> flights, string startingCity, Color playerColor, List<string> requiredLines, string playerID)
+    private void ProcessTimeline(List<DraggableFlight> sortedTickets, string startingCity, Color playerColor, List<string> requiredLines, TimelineColumn.PlayerSide playerSide)
     {
         string currentCity = startingCity;
 
-        for (int i = 0; i < flights.Count; i++)
+        for (int i = 0; i < sortedTickets.Count; i++)
         {
-            Flight flight = flights[i];
+            DraggableFlight ticket = sortedTickets[i];
+            Flight flight = ticket.flightData;
+
             bool isCorrect = flight.origin.Equals(currentCity, System.StringComparison.OrdinalIgnoreCase);
             Color lineTint = isCorrect ? playerColor : colorError;
 
-            // Give this specific line a completely unique ID name
-            string lineID = $"{flight.origin}_{flight.destination}_{playerID}_{i}";
+            // Paint the physical UI Ticket!
+            TicketStyleManager styler = ticket.GetComponent<TicketStyleManager>();
+            if (styler != null) styler.SetTimelineStyle(playerSide, isCorrect);
+
+            string lineID = $"{flight.origin}_{flight.destination}_{playerSide}_{i}";
             requiredLines.Add(lineID);
 
-            // If we haven't drawn this line yet, spawn it and animate it FORWARD!
             if (!activeLines.ContainsKey(lineID))
             {
                 Image newLine = SpawnLineImage(flight.origin, flight.destination, lineTint);
@@ -115,7 +125,6 @@ public class MapManager : MonoBehaviour
             }
             else
             {
-                // Update color just in case it turned from Red to Blue!
                 activeLines[lineID].color = lineTint;
             }
 
@@ -132,8 +141,11 @@ public class MapManager : MonoBehaviour
         if (startNode == null || endNode == null) return null;
 
         Sprite routeSprite = Resources.Load<Sprite>("FlightRoutes/Line_" + originCity + "_" + destinationCity);
-        if (routeSprite == null) routeSprite = Resources.Load<Sprite>("FlightRoutes/Line_" + destinationCity + "_" + originCity);
-        if (routeSprite == null) return null;
+        if (routeSprite == null)
+        {
+            Debug.LogError($"Missing Route Image! You need a file named exactly: Line_{originCity}_{destinationCity}");
+            return null;
+        }
 
         GameObject newLine = Instantiate(flightLinePrefab, flightLinesFolder);
         Image lineImage = newLine.GetComponent<Image>();
@@ -157,11 +169,10 @@ public class MapManager : MonoBehaviour
         return lineImage;
     }
 
-    // --- THE ANIMATION COROUTINES ---
     private IEnumerator AnimateIn(Image img)
     {
         img.fillAmount = 0f;
-        float speed = 2.0f; // Speed of drawing
+        float speed = 2.0f;
         while (img != null && img.fillAmount < 1f)
         {
             img.fillAmount += Time.deltaTime * speed;
@@ -172,13 +183,13 @@ public class MapManager : MonoBehaviour
 
     private IEnumerator AnimateOutAndDestroy(Image img)
     {
-        float speed = 2.5f; // Undrawing is slightly faster so it feels snappy!
+        float speed = 2.5f;
         while (img != null && img.fillAmount > 0f)
         {
             img.fillAmount -= Time.deltaTime * speed;
             yield return null;
         }
-        if (img != null) Destroy(img.gameObject); // Delete it from the game once fully invisible!
+        if (img != null) Destroy(img.gameObject);
     }
 
     private Transform FindNodeByName(string cityName)

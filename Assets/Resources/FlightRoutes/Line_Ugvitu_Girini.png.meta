@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 9209a7ac9a2260a488da750cdc274450
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2399262087293449420
+    second: Line_Ugvitu_Girini_0
+  - first:
+      213: -7197790397746246136
+    second: Line_Ugvitu_Girini_1
+  - first:
+      213: -8342619354654432997
+    second: Line_Ugvitu_Girini_2
+  - first:
+      213: -903364204116508501
+    second: Line_Ugvitu_Girini_3
+  - first:
+      213: -8161150054554042936
+    second: Line_Ugvitu_Girini_4
+  - first:
+      213: -1069177564446649163
+    second: Line_Ugvitu_Girini_5
+  - first:
+      213: 8556079381340178710
+    second: Line_Ugvitu_Girini_6
+  - first:
+      213: 8294597278684533206
+    second: Line_Ugvitu_Girini_7
+  - first:
+      213: -1287816612872540766
+    second: Line_Ugvitu_Girini_8
+  - first:
+      213: 4756950087001517454
+    second: Line_Ugvitu_Girini_9
+  - first:
+      213: -6994078691156310843
+    second: Line_Ugvitu_Girini_10
+  - first:
+      213: -3732632785840134971
+    second: Line_Ugvitu_Girini_11
+  - first:
+      213: 5122727114356743714
+    second: Line_Ugvitu_Girini_12
+  - first:
+      213: 9208741126976588498
+    second: Line_Ugvitu_Girini_13
+  - first:
+      213: -6022069012439139863
+    second: Line_Ugvitu_Girini_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Line_Ugvitu_Girini_0
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 731
+        width: 45
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc430341824eb4120800000000000000
+      internalID: 2399262087293449420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Ugvitu_Girini_1
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 749
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e0e9ec4cf4c1c90800000000000000
+      internalID: -7197790397746246136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Ugvitu_Girini_2
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 752
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b112685e5ef093c80800000000000000
+      internalID: -8342619354654432997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Ugvitu_Girini_3
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 754
+        width: 25
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba005d6ea0b9673f0800000000000000
+      internalID: -903364204116508501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Ugvitu_Girini_4
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 754
+        width: 25
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cd75a7d345cdbe80800000000000000
+      internalID: -8161150054554042936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Ugvitu_Girini_5
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 751
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b4175d7ba48921f0800000000000000
+      internalID: -1069177564446649163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Ugvitu_Girini_6
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 746
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61943d28ddc4db670800000000000000
+      internalID: 8556079381340178710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Ugvitu_Girini_7
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 739
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d1d9ee37445c1370800000000000000
+      internalID: 8294597278684533206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Ugvitu_Girini_8
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 730
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ada2ed1d91c02ee0800000000000000
+      internalID: -1287816612872540766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Ugvitu_Girini_9
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 718
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d2df596e4140240800000000000000
+      internalID: 4756950087001517454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Ugvitu_Girini_10
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 705
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c4cf729c7a00fe90800000000000000
+      internalID: -6994078691156310843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Ugvitu_Girini_11
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 689
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c4a503f146033cc0800000000000000
+      internalID: -3732632785840134971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Ugvitu_Girini_12
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 673
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ede7c4b25971740800000000000000
+      internalID: 5122727114356743714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Ugvitu_Girini_13
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 655
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2da48f5d3450ccf70800000000000000
+      internalID: 9208741126976588498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Ugvitu_Girini_14
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 641
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e97da4b3205d6ca0800000000000000
+      internalID: -6022069012439139863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Line_Ugvitu_Girini_0: 2399262087293449420
+      Line_Ugvitu_Girini_1: -7197790397746246136
+      Line_Ugvitu_Girini_10: -6994078691156310843
+      Line_Ugvitu_Girini_11: -3732632785840134971
+      Line_Ugvitu_Girini_12: 5122727114356743714
+      Line_Ugvitu_Girini_13: 9208741126976588498
+      Line_Ugvitu_Girini_14: -6022069012439139863
+      Line_Ugvitu_Girini_2: -8342619354654432997
+      Line_Ugvitu_Girini_3: -903364204116508501
+      Line_Ugvitu_Girini_4: -8161150054554042936
+      Line_Ugvitu_Girini_5: -1069177564446649163
+      Line_Ugvitu_Girini_6: 8556079381340178710
+      Line_Ugvitu_Girini_7: 8294597278684533206
+      Line_Ugvitu_Girini_8: -1287816612872540766
+      Line_Ugvitu_Girini_9: 4756950087001517454
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

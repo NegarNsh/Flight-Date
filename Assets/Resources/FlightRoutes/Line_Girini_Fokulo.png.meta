@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: 01554ee67514440428870c7b9d2fd87b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3105029486902368707
+    second: Line_Girini_Fokulo_0
+  - first:
+      213: 338418720237533228
+    second: Line_Girini_Fokulo_1
+  - first:
+      213: 1504210605356253594
+    second: Line_Girini_Fokulo_2
+  - first:
+      213: -2714165924564435018
+    second: Line_Girini_Fokulo_3
+  - first:
+      213: -7251202167007405725
+    second: Line_Girini_Fokulo_4
+  - first:
+      213: 2441985701760238978
+    second: Line_Girini_Fokulo_5
+  - first:
+      213: 967838765280868858
+    second: Line_Girini_Fokulo_6
+  - first:
+      213: 6896696710502645459
+    second: Line_Girini_Fokulo_7
+  - first:
+      213: 5959770664328925120
+    second: Line_Girini_Fokulo_8
+  - first:
+      213: 5945471583953152912
+    second: Line_Girini_Fokulo_9
+  - first:
+      213: 7332420564115971324
+    second: Line_Girini_Fokulo_10
+  - first:
+      213: -2612394318512753698
+    second: Line_Girini_Fokulo_11
+  - first:
+      213: 2822733891475030230
+    second: Line_Girini_Fokulo_12
+  - first:
+      213: 4976369482466372447
+    second: Line_Girini_Fokulo_13
+  - first:
+      213: 8676881258738340248
+    second: Line_Girini_Fokulo_14
+  - first:
+      213: 4288475108061732111
+    second: Line_Girini_Fokulo_15
+  - first:
+      213: 8024263645665558325
+    second: Line_Girini_Fokulo_16
+  - first:
+      213: -4313916221527406330
+    second: Line_Girini_Fokulo_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Line_Girini_Fokulo_0
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 788
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3622100228b8e4d0800000000000000
+      internalID: -3105029486902368707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Girini_Fokulo_1
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 806
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c28b915780e42b400800000000000000
+      internalID: 338418720237533228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Girini_Fokulo_2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 752
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9182af639700e410800000000000000
+      internalID: 1504210605356253594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Girini_Fokulo_3
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 769
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bffddcc878555ad0800000000000000
+      internalID: -2714165924564435018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Girini_Fokulo_4
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 734
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3691bf03c0e8e5b90800000000000000
+      internalID: -7251202167007405725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Girini_Fokulo_5
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 729
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 285800cbe0da3e120800000000000000
+      internalID: 2441985701760238978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Girini_Fokulo_6
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 725
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af93b6caa347e6d00800000000000000
+      internalID: 967838765280868858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Girini_Fokulo_7
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 738
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3de7d113e1df5bf50800000000000000
+      internalID: 6896696710502645459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Girini_Fokulo_8
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 723
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cf8e1ec7db55b250800000000000000
+      internalID: 5959770664328925120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Girini_Fokulo_9
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 717
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09be4b7b7ee828250800000000000000
+      internalID: 5945471583953152912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Girini_Fokulo_10
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 711
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfcd6eb77adf1c560800000000000000
+      internalID: 7332420564115971324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Girini_Fokulo_11
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 716
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed37cc75539eebbd0800000000000000
+      internalID: -2612394318512753698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Girini_Fokulo_12
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 707
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d043d0d48d5c2720800000000000000
+      internalID: 2822733891475030230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Girini_Fokulo_13
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 704
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5ba089adad9f0540800000000000000
+      internalID: 4976369482466372447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Girini_Fokulo_14
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 702
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 891d75168897a6870800000000000000
+      internalID: 8676881258738340248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Girini_Fokulo_15
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 702
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0ddf14b369b38b30800000000000000
+      internalID: 4288475108061732111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Girini_Fokulo_16
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 704
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53ff9f77549eb5f60800000000000000
+      internalID: 8024263645665558325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Girini_Fokulo_17
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 709
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60940197d04e124c0800000000000000
+      internalID: -4313916221527406330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Line_Girini_Fokulo_0: -3105029486902368707
+      Line_Girini_Fokulo_1: 338418720237533228
+      Line_Girini_Fokulo_10: 7332420564115971324
+      Line_Girini_Fokulo_11: -2612394318512753698
+      Line_Girini_Fokulo_12: 2822733891475030230
+      Line_Girini_Fokulo_13: 4976369482466372447
+      Line_Girini_Fokulo_14: 8676881258738340248
+      Line_Girini_Fokulo_15: 4288475108061732111
+      Line_Girini_Fokulo_16: 8024263645665558325
+      Line_Girini_Fokulo_17: -4313916221527406330
+      Line_Girini_Fokulo_2: 1504210605356253594
+      Line_Girini_Fokulo_3: -2714165924564435018
+      Line_Girini_Fokulo_4: -7251202167007405725
+      Line_Girini_Fokulo_5: 2441985701760238978
+      Line_Girini_Fokulo_6: 967838765280868858
+      Line_Girini_Fokulo_7: 6896696710502645459
+      Line_Girini_Fokulo_8: 5959770664328925120
+      Line_Girini_Fokulo_9: 5945471583953152912
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

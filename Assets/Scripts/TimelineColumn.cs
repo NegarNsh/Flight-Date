@@ -120,30 +120,31 @@ public class TimelineColumn : MonoBehaviour, IDropHandler, IPointerEnterHandler
             if (flight != null)
             {
                 flight.parentAfterDrag = this.transform;
-
             }
         }
     }
 
-    // --- NEW: Gets all dropped flights in chronological order! ---
-    public List<Flight> GetSortedFlights()
+    // --- NEW: Gets tickets in chronological order AND physically sorts the UI! ---
+    public List<DraggableFlight> GetSortedTickets()
     {
-        List<DraggableFlight> flights = new List<DraggableFlight>();
+        List<DraggableFlight> tickets = new List<DraggableFlight>();
 
-        // Find every ticket currently dropped in this column
+        // Find every physical ticket currently dropped in this column
         foreach (Transform child in transform)
         {
             DraggableFlight df = child.GetComponent<DraggableFlight>();
-            if (df != null) flights.Add(df);
+            if (df != null) tickets.Add(df);
         }
 
-        // Sort them by their exact departure time!
-        flights.Sort((a, b) => a.flightData.exactDeparture.CompareTo(b.flightData.exactDeparture));
+        // 1. Sort the tickets mathematically by their exact departure time!
+        tickets.Sort((a, b) => a.flightData.exactDeparture.CompareTo(b.flightData.exactDeparture));
 
-        // Extract just the data to send to the map
-        List<Flight> sortedData = new List<Flight>();
-        foreach (var f in flights) sortedData.Add(f.flightData);
+        // 2. NEW: Force the UI boxes to physically stack in that exact chronological order!
+        for (int i = 0; i < tickets.Count; i++)
+        {
+            tickets[i].transform.SetSiblingIndex(i);
+        }
 
-        return sortedData;
+        return tickets;
     }
 }

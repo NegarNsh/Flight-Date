@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: c49e11d6065dbfc40805a58e6f825886
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5098696081428163053
+    second: Line_Gotte_Girini_0
+  - first:
+      213: 5603997106702752460
+    second: Line_Gotte_Girini_1
+  - first:
+      213: -5654435459131537371
+    second: Line_Gotte_Girini_2
+  - first:
+      213: 2968318811619049474
+    second: Line_Gotte_Girini_3
+  - first:
+      213: -5611431511913438163
+    second: Line_Gotte_Girini_4
+  - first:
+      213: -2480010397829706590
+    second: Line_Gotte_Girini_5
+  - first:
+      213: -7171404722968973531
+    second: Line_Gotte_Girini_6
+  - first:
+      213: -4211273191083868097
+    second: Line_Gotte_Girini_7
+  - first:
+      213: -3923890768760620433
+    second: Line_Gotte_Girini_8
+  - first:
+      213: -1005909943576220455
+    second: Line_Gotte_Girini_9
+  - first:
+      213: 2707840666217500431
+    second: Line_Gotte_Girini_10
+  - first:
+      213: -5160597227916476013
+    second: Line_Gotte_Girini_11
+  - first:
+      213: -3349247368479888512
+    second: Line_Gotte_Girini_12
+  - first:
+      213: -5031041529311870990
+    second: Line_Gotte_Girini_13
+  - first:
+      213: -4820093989607595323
+    second: Line_Gotte_Girini_14
+  - first:
+      213: -8865903758856799976
+    second: Line_Gotte_Girini_15
+  - first:
+      213: -2059677725363701493
+    second: Line_Gotte_Girini_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Line_Gotte_Girini_0
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 701
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3165cc09deacd39b0800000000000000
+      internalID: -5098696081428163053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Girini_1
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 673
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cca95536da565cd40800000000000000
+      internalID: 5603997106702752460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Girini_2
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 646
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 528871d88e86781b0800000000000000
+      internalID: -5654435459131537371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Girini_3
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 623
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 200c9aa7b36913920800000000000000
+      internalID: 2968318811619049474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Girini_4
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 601
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2467f245c03022b0800000000000000
+      internalID: -5611431511913438163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Girini_5
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 582
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2acc51eceab359dd0800000000000000
+      internalID: -2480010397829706590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Girini_6
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 565
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52f20e2766d0a7c90800000000000000
+      internalID: -7171404722968973531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Girini_7
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 550
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f300251585d8e85c0800000000000000
+      internalID: -4211273191083868097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Girini_8
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 536
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6ab69ea22a8b89c0800000000000000
+      internalID: -3923890768760620433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Girini_9
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 523
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc2b116c3a4a02f0800000000000000
+      internalID: -1005909943576220455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Girini_10
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 513
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0f404a3dbe249520800000000000000
+      internalID: 2707840666217500431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Girini_11
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 503
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3914c29c920e168b0800000000000000
+      internalID: -5160597227916476013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Girini_12
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 495
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08b28d073451581d0800000000000000
+      internalID: -3349247368479888512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Girini_13
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 488
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ffb02b72662e2ab0800000000000000
+      internalID: -5031041529311870990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Girini_14
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 484
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c2a17ded069b1db0800000000000000
+      internalID: -4820093989607595323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Girini_15
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 481
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8193a80418bf5f480800000000000000
+      internalID: -8865903758856799976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Gotte_Girini_16
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 481
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0979eb750e8a63e0800000000000000
+      internalID: -2059677725363701493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Line_Gotte_Girini_0: -5098696081428163053
+      Line_Gotte_Girini_1: 5603997106702752460
+      Line_Gotte_Girini_10: 2707840666217500431
+      Line_Gotte_Girini_11: -5160597227916476013
+      Line_Gotte_Girini_12: -3349247368479888512
+      Line_Gotte_Girini_13: -5031041529311870990
+      Line_Gotte_Girini_14: -4820093989607595323
+      Line_Gotte_Girini_15: -8865903758856799976
+      Line_Gotte_Girini_16: -2059677725363701493
+      Line_Gotte_Girini_2: -5654435459131537371
+      Line_Gotte_Girini_3: 2968318811619049474
+      Line_Gotte_Girini_4: -5611431511913438163
+      Line_Gotte_Girini_5: -2480010397829706590
+      Line_Gotte_Girini_6: -7171404722968973531
+      Line_Gotte_Girini_7: -4211273191083868097
+      Line_Gotte_Girini_8: -3923890768760620433
+      Line_Gotte_Girini_9: -1005909943576220455
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

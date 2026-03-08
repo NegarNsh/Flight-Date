@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: 3f5c1108b71cdd5468ed9af1d94c7805
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3783797549871150289
+    second: Line_Yadibu_Fokulo_0
+  - first:
+      213: -7254012891786867468
+    second: Line_Yadibu_Fokulo_1
+  - first:
+      213: 2613461339418402113
+    second: Line_Yadibu_Fokulo_2
+  - first:
+      213: -4575258907117266195
+    second: Line_Yadibu_Fokulo_3
+  - first:
+      213: -2916158568247061861
+    second: Line_Yadibu_Fokulo_4
+  - first:
+      213: 2866904268664357412
+    second: Line_Yadibu_Fokulo_5
+  - first:
+      213: 347743039522241753
+    second: Line_Yadibu_Fokulo_6
+  - first:
+      213: 576680701209881401
+    second: Line_Yadibu_Fokulo_7
+  - first:
+      213: -7464845005961833345
+    second: Line_Yadibu_Fokulo_8
+  - first:
+      213: 2546573451017097193
+    second: Line_Yadibu_Fokulo_9
+  - first:
+      213: -4381433724856163372
+    second: Line_Yadibu_Fokulo_10
+  - first:
+      213: 3713820516060780040
+    second: Line_Yadibu_Fokulo_11
+  - first:
+      213: -4675838136557494755
+    second: Line_Yadibu_Fokulo_12
+  - first:
+      213: 945911106705543295
+    second: Line_Yadibu_Fokulo_13
+  - first:
+      213: 3206164719284509876
+    second: Line_Yadibu_Fokulo_14
+  - first:
+      213: 3177623057944374934
+    second: Line_Yadibu_Fokulo_15
+  - first:
+      213: 267040765538118852
+    second: Line_Yadibu_Fokulo_16
+  - first:
+      213: -1017209651918354413
+    second: Line_Yadibu_Fokulo_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Line_Yadibu_Fokulo_0
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 799
+        width: 36
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2bcfe10d204d7bc0800000000000000
+      internalID: -3783797549871150289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Fokulo_1
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 770
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fc80f455b1945b90800000000000000
+      internalID: -7254012891786867468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Fokulo_2
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 742
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14d1042dd31e44420800000000000000
+      internalID: 2613461339418402113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Fokulo_3
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 715
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dea55d5c34a6180c0800000000000000
+      internalID: -4575258907117266195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Fokulo_4
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 690
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b921cee8b39b787d0800000000000000
+      internalID: -2916158568247061861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Fokulo_5
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 666
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4224aca2e3a49c720800000000000000
+      internalID: 2866904268664357412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Fokulo_6
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 643
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc76d7b37e63d400800000000000000
+      internalID: 347743039522241753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Fokulo_7
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 605
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b2078da08c00800800000000000000
+      internalID: 576680701209881401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Fokulo_8
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 623
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f74db4c740b876890800000000000000
+      internalID: -7464845005961833345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Fokulo_9
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 573
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ef8056bf0f375320800000000000000
+      internalID: 2546573451017097193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Fokulo_10
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 588
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d32807bd350233c0800000000000000
+      internalID: -4381433724856163372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Fokulo_11
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 547
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8065c5b25142a8330800000000000000
+      internalID: 3713820516060780040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Fokulo_12
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 559
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1e144b0df51c1fb0800000000000000
+      internalID: -4675838136557494755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Fokulo_13
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 523
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f70d740d32d802d00800000000000000
+      internalID: 945911106705543295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Fokulo_14
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 534
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bcd75043d59e7c20800000000000000
+      internalID: 3206164719284509876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Fokulo_15
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 500
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e6dded55f291c20800000000000000
+      internalID: 3177623057944374934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Fokulo_16
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 512
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cca2725928b4b300800000000000000
+      internalID: 267040765538118852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Line_Yadibu_Fokulo_17
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 492
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 318ce43063522e1f0800000000000000
+      internalID: -1017209651918354413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Line_Yadibu_Fokulo_0: -3783797549871150289
+      Line_Yadibu_Fokulo_1: -7254012891786867468
+      Line_Yadibu_Fokulo_10: -4381433724856163372
+      Line_Yadibu_Fokulo_11: 3713820516060780040
+      Line_Yadibu_Fokulo_12: -4675838136557494755
+      Line_Yadibu_Fokulo_13: 945911106705543295
+      Line_Yadibu_Fokulo_14: 3206164719284509876
+      Line_Yadibu_Fokulo_15: 3177623057944374934
+      Line_Yadibu_Fokulo_16: 267040765538118852
+      Line_Yadibu_Fokulo_17: -1017209651918354413
+      Line_Yadibu_Fokulo_2: 2613461339418402113
+      Line_Yadibu_Fokulo_3: -4575258907117266195
+      Line_Yadibu_Fokulo_4: -2916158568247061861
+      Line_Yadibu_Fokulo_5: 2866904268664357412
+      Line_Yadibu_Fokulo_6: 347743039522241753
+      Line_Yadibu_Fokulo_7: 576680701209881401
+      Line_Yadibu_Fokulo_8: -7464845005961833345
+      Line_Yadibu_Fokulo_9: 2546573451017097193
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -54,6 +54,8 @@ public class MapManager : MonoBehaviour
     {
         if (cloudsParent != null)
         {
+            cloudsParent.gameObject.SetActive(true);
+
             foreach (Transform cloud in cloudsParent) { cloud.gameObject.SetActive(cloudedCities.Contains(cloud.name)); }
         }
         if (mapNodesParent != null)

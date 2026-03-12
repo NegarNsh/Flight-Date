@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class LevelManager : MonoBehaviour
 
     [Header("Current Game State")]
     public int currentLevel = 1;
+    public int totalLevels = 5;
     public bool isLevelActive = false;
 
     [Header("Script Connections")]
@@ -56,6 +58,11 @@ public class LevelManager : MonoBehaviour
             // Then place the avatars!
             mapManager.PlaceAvatarsAtStart(configForThisLevel.characterA.startingCity, configForThisLevel.characterB.startingCity);
         }
+        if (GameResultManager.instance != null)
+        {
+            // NEW: If currentLevel is 5, and totalLevels is 5, it knows this is the end!
+            GameResultManager.instance.isFinalLevel = (currentLevel == totalLevels);
+        }
 
         isLevelActive = true;
     }
@@ -89,6 +96,12 @@ public class LevelManager : MonoBehaviour
         LoadCurrentLevel();
     }
 
+    public void GoToMainMenu()
+    {
+        // NOTE: Change "MainMenu" to the EXACT name of your actual menu scene file!
+        SceneManager.LoadScene("MainMenu");
+    }
+
     private void ClearBoard()
     {
         if (playerUIManager != null)
@@ -99,4 +112,6 @@ public class LevelManager : MonoBehaviour
             if (MapManager.instance != null) MapManager.instance.ClearAllLines();
         }
     }
+
+
 }

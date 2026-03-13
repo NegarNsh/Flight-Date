@@ -177,7 +177,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -134, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &687787698122052733
@@ -426,8 +426,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 93.645, y: -0.002571106}
-  m_SizeDelta: {x: 876.048, y: 549.86}
+  m_AnchoredPosition: {x: 116.041, y: 4.467}
+  m_SizeDelta: {x: 920.84, y: 540.921}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7009216430282104055
 CanvasRenderer:
@@ -508,7 +508,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -84.999985, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1356004210872086780
@@ -849,14 +849,14 @@ RectTransform:
   m_LocalScale: {x: 0.36156613, y: 0.1811698, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6826494833011103792}
   - {fileID: 5659826144024624560}
+  - {fileID: 6826494833011103792}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -9.5, y: -18}
-  m_SizeDelta: {x: -19, y: 36}
+  m_AnchoredPosition: {x: -4.6413574, y: -18}
+  m_SizeDelta: {x: 7.8755, y: 36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8421922650203861620
 CanvasRenderer:
@@ -908,11 +908,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec5122ea2dfb2e049b1f4371efc89383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlightUICard
-  originText: {fileID: 8212145906000181528}
-  destinationText: {fileID: 7008158967902612804}
-  depTimeText: {fileID: 7427184233323222440}
-  arrTimeText: {fileID: 0}
-  priceText: {fileID: 5524705568664701698}
+  shopOriginText: {fileID: 8212145906000181528}
+  shopDestinationText: {fileID: 7008158967902612804}
+  shopDepTimeText: {fileID: 7427184233323222440}
+  shopArrTimeText: {fileID: 6075053307642975686}
+  shopPriceText: {fileID: 5524705568664701698}
+  timelineOriginText: {fileID: 1281502050227500592}
+  timelineDestinationText: {fileID: 4427058742514270698}
+  timelineDepTimeText: {fileID: 1556526064804612089}
+  timelineArrTimeText: {fileID: 6627827741628225225}
+  timelinePriceText: {fileID: 5073459590472488403}
   priceBackground: {fileID: 5755920535240324121}
 --- !u!225 &-8657335305356781666
 CanvasGroup:
@@ -948,6 +953,8 @@ MonoBehaviour:
     startTimeText: 
     durationHours: 0
   parentAfterDrag: {fileID: 0}
+  shopDesign: {fileID: 2820001652949302763}
+  timelineDesign: {fileID: 561023859255338613}
 --- !u!1 &3841169328238284061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1954,8 +1961,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 148, y: -144}
-  m_SizeDelta: {x: 100.7, y: 23.6}
+  m_AnchoredPosition: {x: 130.5, y: -144}
+  m_SizeDelta: {x: 113.354, y: 23.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9080596388855824189
 CanvasRenderer:
@@ -2051,7 +2058,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 59.083805, w: 0}
+  m_margin: {x: 0.000003834488, y: 0, z: 59.083805, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

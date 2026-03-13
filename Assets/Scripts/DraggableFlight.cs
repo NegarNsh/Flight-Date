@@ -14,11 +14,22 @@ public class DraggableFlight : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
     private Vector2 originalSize; // NEW: We must remember the shop size!
 
+
+    [Header("Ticket Designs")]
+    public GameObject shopDesign;
+    public GameObject timelineDesign;
+
+
     void Awake()
     {
         canvasGroup = GetComponent<CanvasGroup>();
         mainCanvas = GameObject.FindFirstObjectByType<Canvas>().transform;
         originalSize = GetComponent<RectTransform>().sizeDelta;
+    }
+
+    private void Start()
+    {
+        UpdateDesignMode();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -130,5 +141,17 @@ public class DraggableFlight : MonoBehaviour, IBeginDragHandler, IDragHandler, I
             MapManager.instance.RefreshMap();
         }
 
+        UpdateDesignMode();
+
+    }
+
+    public void UpdateDesignMode()
+    {
+        // 1. Ask: "Is my current parent a Timeline?"
+        bool isInTimeline = (transform.parent.GetComponent<TimelineColumn>() != null);
+
+        // 2. Turn the correct folders on/off based on the answer!
+        if (shopDesign != null) shopDesign.SetActive(!isInTimeline);
+        if (timelineDesign != null) timelineDesign.SetActive(isInTimeline);
     }
 }

@@ -1,4 +1,4 @@
-using TMPro; // We need this for crisp UI text!
+using TMPro; 
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,13 +6,19 @@ using UnityEngine.UI;
 // It acts as the "waiter" for that single card, filling in the data.
 public class FlightUICard : MonoBehaviour
 {
-    [Header("UI Slots (Drag from prefab children)")]
-    // Level Designers link these slots in the inspector, so no transform.Find needed!
-    public TextMeshProUGUI originText;
-    public TextMeshProUGUI destinationText;
-    public TextMeshProUGUI depTimeText;
-    public TextMeshProUGUI arrTimeText;
-    public TextMeshProUGUI priceText;
+    [Header("Shop Text Boxes")]    // Level Designers link these slots in the inspector, so no transform.Find needed!
+    public TextMeshProUGUI shopOriginText;
+    public TextMeshProUGUI shopDestinationText;
+    public TextMeshProUGUI shopDepTimeText;
+    public TextMeshProUGUI shopArrTimeText;
+    public TextMeshProUGUI shopPriceText;
+
+    [Header("Timeline Text Boxes")]    // Level Designers link these slots in the inspector, so no transform.Find needed!
+    public TextMeshProUGUI timelineOriginText;
+    public TextMeshProUGUI timelineDestinationText;
+    public TextMeshProUGUI timelineDepTimeText;
+    public TextMeshProUGUI timelineArrTimeText;
+    public TextMeshProUGUI timelinePriceText;
 
     [Header("Optional Styling")]
     public Image priceBackground; // For color coding surges/discounts later!
@@ -23,24 +29,21 @@ public class FlightUICard : MonoBehaviour
     {
         if (data == null) return; // Safety check
 
-        // 1. Fill basic text slots with real mathematical flight data!
-        if (originText != null) originText.text = data.origin;
-        if (destinationText != null) destinationText.text = data.destination;
+        // 1. Fill basic text slots for the SHOP design!
+        if (shopOriginText != null) shopOriginText.text = data.origin;
+        if (shopDestinationText != null) shopDestinationText.text = data.destination;
+        if (shopPriceText != null) shopPriceText.text = "$" + data.basePrice.ToString();
+        if (shopDepTimeText != null) shopDepTimeText.text = data.exactDeparture.ToString("d MMM H:mm");
+        if (shopArrTimeText != null) shopArrTimeText.text = data.exactArrival.ToString("d MMM H:mm");
 
-        // Use ToString() to convert integer numbers into text.
-        if (priceText != null) priceText.text = "$" + data.basePrice.ToString();
-
-        // 2. The Advanced Time Math: Format the DateTime objects beautifully.
-        // Format string "d MMM H:mm" looks exactly like image_3.png: "7 Mar 08:00".
-        if (depTimeText != null) depTimeText.text = data.exactDeparture.ToString("d MMM H:mm");
-        if (arrTimeText != null) arrTimeText.text = data.exactArrival.ToString("d MMM H:mm");
-
-        // 3. Clear descriptions that link back to the CSV logic.
-
+        // 2. Fill basic text slots for the TIMELINE design! (Doing the exact same thing here)
+        if (timelineOriginText != null) timelineOriginText.text = data.origin;
+        if (timelineDestinationText != null) timelineDestinationText.text = data.destination;
+        if (timelinePriceText != null) timelinePriceText.text = "$" + data.basePrice.ToString();
+        if (timelineDepTimeText != null) timelineDepTimeText.text = data.exactDeparture.ToString("d MMM H:mm");
+        if (timelineArrTimeText != null) timelineArrTimeText.text = data.exactArrival.ToString("d MMM H:mm");
 
         // NEW: Hand the data over to the drag script!
         GetComponent<DraggableFlight>().flightData = data;
-
     }
-
 }

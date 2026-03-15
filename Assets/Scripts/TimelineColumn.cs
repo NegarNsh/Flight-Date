@@ -19,6 +19,21 @@ public class TimelineColumn : MonoBehaviour, IDropHandler, IPointerEnterHandler
     public float spaceBeforeNewDay = 50f;  // Space after 22:00, before the new Day text
     public float spaceAfterDay = 30f;      // Space after the Day text, before the time starts
 
+    [Header("Ticket Sizing")]
+    [Tooltip("How much smaller the ticket should be compared to the column width. Try 60 or 80!")]
+    public float ticketWidthMargin = 60f;
+    public float leftPadding = 30f;  // Pushes the ticket away from the left edge
+    public float rightPadding = 10f; // Shrinks the right side so it doesn't hit the scrollbar
+
+
+    [Header("Internal Ticket Padding")]
+    [Tooltip("Pushes the text down from the top edge of the purple ticket")]
+    public float contentTopPadding = 20f;
+    [Tooltip("Pushes the text in from the left and right edges of the purple ticket")]
+    public float contentSidePadding = 10f;
+
+
+
     public DateTime timelineStart;
 
     public void GenerateTimeline(List<Flight> levelFlights)
@@ -157,30 +172,84 @@ public class TimelineColumn : MonoBehaviour, IDropHandler, IPointerEnterHandler
         return tickets;
     }
 
-    // --- NEW: Snaps tickets to exact times and stretches them! ---
+    // --- NEW: Snaps tickets to exact times and stretches them perfectly! ---
+    // --- THE UNIFIED MATH FIX ---
     public void UpdateTicketsLayout()
     {
         List<DraggableFlight> tickets = GetSortedTickets();
+        RectTransform columnRect = GetComponent<RectTransform>();
 
         foreach (DraggableFlight ticket in tickets)
         {
             if (ticket.flightData == null) continue;
 
+            // 1. Calculate the exact pixel coordinates for Departure (Top) and Arrival (Bottom)
+            float yTop = GetYPosition(ticket.flightData.exactDeparture);
+            float yBottom = GetYPosition(ticket.flightData.exactArrival);
+
+            // 2. The height is exactly the distance between those two points
+            float flightHeight = Mathf.Abs(yTop - yBottom);
+
+            // 3. Shape the main ticket container
             RectTransform ticketRect = ticket.GetComponent<RectTransform>();
-            RectTransform columnRect = GetComponent<RectTransform>();
+            ticketRect.localScale = Vector3.one; // Ensures it doesn't stay giant!
 
-            // 1. STRETCH: Calculate height based on duration
-            float flightHours = (float)(ticket.flightData.exactArrival - ticket.flightData.exactDeparture).TotalHours;
-            float newHeight = flightHours * pixelsPerHour;
+            // ---> NEW: Set Anchors and Pivot to the Top-LEFT so padding works properly <---
+            ticketRect.anchorMin = new Vector2(0f, 1f);
+            ticketRect.anchorMax = new Vector2(0f, 1f);
+            ticketRect.pivot = new Vector2(0f, 1f);
 
-            // Set new width and height
-            ticketRect.sizeDelta = new Vector2(columnRect.rect.width, newHeight);
+            // ---> NEW: Calculate the true width and apply the Left Padding position <---
+            float newWidth = columnRect.rect.width - leftPadding - rightPadding;
+            ticketRect.sizeDelta = new Vector2(newWidth, flightHeight);
+            ticketRect.anchoredPosition = new Vector2(leftPadding, yTop);
 
-            // 2. POSITION: Find the exact Y coordinate based on Departure Time!
-            float exactYPos = GetYPosition(ticket.flightData.exactDeparture);
+            // 4. FORCE the purple Timeline_Design graphic to stretch perfectly
+            if (ticket.timelineDesign != null)
+            {
+                RectTransform designRect = ticket.timelineDesign.GetComponent<RectTransform>();
+                designRect.anchorMin = new Vector2(0, 0);
+                designRect.anchorMax = new Vector2(1, 1);
+                designRect.offsetMin = Vector2.zero;
+                designRect.offsetMax = Vector2.zero;
 
-            // Snap it into place! (X is 0 to center it, Y is our exact calculation)
-            ticketRect.anchoredPosition = new Vector2(0, exactYPos);
+                // 5. FORCE the Background Image inside it to stretch to the absolute edges
+                Transform bgImage = ticket.timelineDesign.transform.Find("Image");
+                if (bgImage != null)
+                {
+                    RectTransform bgRect = bgImage.GetComponent<RectTransform>();
+                    bgRect.anchorMin = new Vector2(0, 0);
+                    bgRect.anchorMax = new Vector2(1, 1);
+                    bgRect.offsetMin = Vector2.zero;
+                    bgRect.offsetMax = Vector2.zero;
+                }
+                // 6. STRETCH THE CONTENT FOLDER, BUT APPLY YOUR PADDING!
+                Transform contentFolder = ticket.timelineDesign.transform.Find("ContentFolder");
+                if (contentFolder != null)
+                {
+                    RectTransform contentRect = contentFolder.GetComponent<RectTransform>();
+
+                    // Anchor it to stretch across the whole ticket
+                    contentRect.anchorMin = new Vector2(0, 0);
+                    contentRect.anchorMax = new Vector2(1, 1);
+
+                    // Apply the padding! 
+                    contentRect.offsetMin = new Vector2(contentSidePadding, 10f);
+                    contentRect.offsetMax = new Vector2(-contentSidePadding, -contentTopPadding);
+
+                    // 7. ---> THE FIX <--- 
+                    // Pin the text INSIDE the ContentFolder (Notice we loop through 'contentFolder' now!)
+                    foreach (Transform child in contentFolder)
+                    {
+                        RectTransform textRect = child.GetComponent<RectTransform>();
+                        if (textRect != null)
+                        {
+                            textRect.anchorMin = new Vector2(0.5f, 1f);
+                            textRect.anchorMax = new Vector2(0.5f, 1f);
+                        }
+                    }
+                }
+            }
         }
     }
 }

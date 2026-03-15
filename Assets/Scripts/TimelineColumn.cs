@@ -81,6 +81,8 @@ public class TimelineColumn : MonoBehaviour, IDropHandler, IPointerEnterHandler
             }
 
             GameObject marker = Instantiate(timeMarkerPrefab, this.transform);
+            // This forces the background line to the very BACK of the folder, acting like wallpaper!
+            marker.transform.SetAsFirstSibling();
             RectTransform markerRT = marker.GetComponent<RectTransform>();
             markerRT.anchoredPosition = new Vector2(0, currentY);
 
@@ -128,6 +130,7 @@ public class TimelineColumn : MonoBehaviour, IDropHandler, IPointerEnterHandler
     }
 
     // --- NEW: Gets tickets in chronological order AND physically sorts the UI! ---
+    // --- NEW: Gets tickets in chronological order AND physically sorts the UI! ---
     public List<DraggableFlight> GetSortedTickets()
     {
         List<DraggableFlight> tickets = new List<DraggableFlight>();
@@ -142,10 +145,13 @@ public class TimelineColumn : MonoBehaviour, IDropHandler, IPointerEnterHandler
         // 1. Sort the tickets mathematically by their exact departure time!
         tickets.Sort((a, b) => a.flightData.exactDeparture.CompareTo(b.flightData.exactDeparture));
 
-        // 2. NEW: Force the UI boxes to physically stack in that exact chronological order!
+        // 2. THE FIX: Force the UI boxes to physically stack in that exact chronological order, 
+        // BUT start stacking them at the END of the list so they sit on top of the black lines!
+        int totalChildren = transform.childCount;
         for (int i = 0; i < tickets.Count; i++)
         {
-            tickets[i].transform.SetSiblingIndex(i);
+            // We push them to the very end of the line, keeping their order intact!
+            tickets[i].transform.SetSiblingIndex((totalChildren - tickets.Count) + i);
         }
 
         return tickets;

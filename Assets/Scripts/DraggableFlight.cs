@@ -121,6 +121,8 @@ public class DraggableFlight : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
             rt.sizeDelta = new Vector2(originalSize.x, newHeight);
             rt.anchoredPosition = new Vector2(0, yPosStart);
+
+            transform.SetAsLastSibling();
         }
         else
         {

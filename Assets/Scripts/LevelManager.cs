@@ -31,6 +31,11 @@ public class LevelManager : MonoBehaviour
         List<Flight> flightsForThisLevel = FlightDatabase.instance.GetFlightsForLevel(currentLevel);
         if (uiManager != null) uiManager.DisplayFlights(flightsForThisLevel);
 
+        // ---> THE UI SPACING FIX <---
+        // This acts like a giant "Refresh" button for the entire Canvas.
+        // It forces the Shop's Layout Group to do its math instantly before the player even sees it!
+        Canvas.ForceUpdateCanvases();
+
         // ---> NEW TIMELINE GENERATOR TRIGGER <---
         if (playerUIManager != null)
         {
@@ -58,6 +63,7 @@ public class LevelManager : MonoBehaviour
             // Then place the avatars!
             mapManager.PlaceAvatarsAtStart(configForThisLevel.characterA.startingCity, configForThisLevel.characterB.startingCity);
         }
+
         if (GameResultManager.instance != null)
         {
             // NEW: If currentLevel is 5, and totalLevels is 5, it knows this is the end!

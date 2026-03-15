@@ -37,19 +37,12 @@ public class LevelManager : MonoBehaviour
         Canvas.ForceUpdateCanvases();
 
         // ---> NEW TIMELINE GENERATOR TRIGGER <---
-        // ---> NEW TIMELINE GENERATOR TRIGGER <---
         if (playerUIManager != null)
         {
             playerUIManager.dropZoneA.GetComponent<TimelineColumn>().GenerateTimeline(flightsForThisLevel);
             playerUIManager.dropZoneB.GetComponent<TimelineColumn>().GenerateTimeline(flightsForThisLevel);
-
-            // ---> THE FIX: FORCE BOTH SCROLLBARS TO THE VERY TOP! <---
-            UnityEngine.UI.ScrollRect scrollA = playerUIManager.dropZoneA.GetComponentInParent<UnityEngine.UI.ScrollRect>();
-            if (scrollA != null) scrollA.verticalNormalizedPosition = 1f;
-
-            UnityEngine.UI.ScrollRect scrollB = playerUIManager.dropZoneB.GetComponentInParent<UnityEngine.UI.ScrollRect>();
-            if (scrollB != null) scrollB.verticalNormalizedPosition = 1f;
         }
+
         // Notice we ask the new LevelDatabase for the config!
         LevelConfig configForThisLevel = LevelDatabase.instance.GetConfigForLevel(currentLevel);
 

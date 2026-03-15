@@ -30,6 +30,9 @@ public class PlayerUIManager : MonoBehaviour
     private float budgetA;
     private float budgetB;
 
+    // --- NEW: A secret place to remember the level config! ---
+    private LevelConfig savedConfig;
+
     void Awake()
     {
         if (instance == null) { instance = this; } else { Destroy(gameObject); }
@@ -37,12 +40,16 @@ public class PlayerUIManager : MonoBehaviour
 
     public void SetupLevelCharacters(LevelConfig currentLevelData)
     {
+        // --- NEW: Save the config so the button knows what level it is! ---
+        savedConfig = currentLevelData;
+
         // 1. Save the budgets
         budgetA = currentLevelData.characterA.startingMoney;
         budgetB = currentLevelData.characterB.startingMoney;
 
         // 2. Setup Top Bar Character A
         if (portraitA != null) portraitA.sprite = Resources.Load<Sprite>($"Characters/{currentLevelData.characterA.characterName}_Normal");
+
         if (nameTextA != null) nameTextA.text = currentLevelData.characterA.characterName;
         if (moneyTextA != null) moneyTextA.text = "$" + budgetA.ToString();
         if (expenseTextA != null) expenseTextA.text = "";
@@ -68,8 +75,24 @@ public class PlayerUIManager : MonoBehaviour
 
         // 6. Force the button to be off when the level first starts!
         UpdateButtonState(false);
+
+        // --- NEW: Wire up the button via code automatically! ---
+        if (travelButton != null)
+        {
+            travelButton.onClick.RemoveAllListeners(); // Clear out old clicks
+            travelButton.onClick.AddListener(OnTravelButtonClicked); // Add the new sequence
+        }
     }
 
+    // --- NEW: The function that actually triggers when you click the button! ---
+    private void OnTravelButtonClicked()
+    {
+        if (GameResultManager.instance != null)
+        {
+            // Pass the UI and the Config we saved earlier to the Result Manager
+            GameResultManager.instance.StartTravelSequence(this, savedConfig);
+        }
+    }
 
     // --- THE MATH MAGIC ---
     public void RecalculateExpenses()

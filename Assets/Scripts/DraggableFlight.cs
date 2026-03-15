@@ -19,6 +19,8 @@ public class DraggableFlight : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     public GameObject shopDesign;
     public GameObject timelineDesign;
 
+    [Header("Timeline Settings")]
+    public float pixelsPerHour = 50f; // You will tweak this to match your background lines!
 
     void Awake()
     {
@@ -153,5 +155,17 @@ public class DraggableFlight : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         // 2. Turn the correct folders on/off based on the answer!
         if (shopDesign != null) shopDesign.SetActive(!isInTimeline);
         if (timelineDesign != null) timelineDesign.SetActive(isInTimeline);
+
+        if (isInTimeline && flightData != null)
+        {
+            RectTransform myRect = GetComponent<RectTransform>();
+            RectTransform columnRect = transform.parent.GetComponent<RectTransform>();
+
+            // 1. Calculate how long the flight is in total hours
+            float flightHours = (float)(flightData.exactArrival - flightData.exactDeparture).TotalHours;
+
+            // 2. Change width to fit the column, and change height based on the time!
+            myRect.sizeDelta = new Vector2(columnRect.rect.width, flightHours * pixelsPerHour);
+        }
     }
 }

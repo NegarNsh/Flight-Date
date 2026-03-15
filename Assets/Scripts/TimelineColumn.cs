@@ -120,6 +120,9 @@ public class TimelineColumn : MonoBehaviour, IDropHandler, IPointerEnterHandler
             if (flight != null)
             {
                 flight.parentAfterDrag = this.transform;
+
+                // NEW: Wait for the frame to end, then snap everything into place!
+                Invoke("UpdateTicketsLayout", 0.05f);
             }
         }
     }
@@ -146,5 +149,32 @@ public class TimelineColumn : MonoBehaviour, IDropHandler, IPointerEnterHandler
         }
 
         return tickets;
+    }
+
+    // --- NEW: Snaps tickets to exact times and stretches them! ---
+    public void UpdateTicketsLayout()
+    {
+        List<DraggableFlight> tickets = GetSortedTickets();
+
+        foreach (DraggableFlight ticket in tickets)
+        {
+            if (ticket.flightData == null) continue;
+
+            RectTransform ticketRect = ticket.GetComponent<RectTransform>();
+            RectTransform columnRect = GetComponent<RectTransform>();
+
+            // 1. STRETCH: Calculate height based on duration
+            float flightHours = (float)(ticket.flightData.exactArrival - ticket.flightData.exactDeparture).TotalHours;
+            float newHeight = flightHours * pixelsPerHour;
+
+            // Set new width and height
+            ticketRect.sizeDelta = new Vector2(columnRect.rect.width, newHeight);
+
+            // 2. POSITION: Find the exact Y coordinate based on Departure Time!
+            float exactYPos = GetYPosition(ticket.flightData.exactDeparture);
+
+            // Snap it into place! (X is 0 to center it, Y is our exact calculation)
+            ticketRect.anchoredPosition = new Vector2(0, exactYPos);
+        }
     }
 }

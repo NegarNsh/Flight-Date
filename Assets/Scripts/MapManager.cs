@@ -33,6 +33,9 @@ public class MapManager : MonoBehaviour
 
     private Dictionary<string, Image> activeLines = new Dictionary<string, Image>();
 
+    // --- NEW: A flag to tell the game if there are any red lines! ---
+    [HideInInspector] public bool hasMapErrors = false;
+
     void Awake()
     {
         if (instance == null) { instance = this; } else { Destroy(gameObject); }
@@ -75,9 +78,11 @@ public class MapManager : MonoBehaviour
 
     public void RefreshMap()
     {
+        // --- NEW: Reset the flag every time we draw the map! ---
+        hasMapErrors = false;
+
         List<string> requiredLines = new List<string>();
 
-        // Notice we are correctly asking for GetSortedTickets() now!
         if (timelineA != null && !string.IsNullOrEmpty(startCityA))
             ProcessTimeline(timelineA.GetSortedTickets(), startCityA, colorPlayerA, requiredLines, TimelineColumn.PlayerSide.PlayerA);
 
@@ -95,6 +100,9 @@ public class MapManager : MonoBehaviour
         }
 
         foreach (string key in linesToRemove) activeLines.Remove(key);
+
+        // --- NEW: Tell the UI to check the button again now that the map is drawn! ---
+        if (PlayerUIManager.instance != null) PlayerUIManager.instance.RecalculateExpenses();
     }
 
     private void ProcessTimeline(List<DraggableFlight> sortedTickets, string startingCity, Color playerColor, List<string> requiredLines, TimelineColumn.PlayerSide playerSide)
@@ -107,9 +115,12 @@ public class MapManager : MonoBehaviour
             Flight flight = ticket.flightData;
 
             bool isCorrect = flight.origin.Equals(currentCity, System.StringComparison.OrdinalIgnoreCase);
+
+            // --- NEW: If the line is wrong, wave the red flag! ---
+            if (!isCorrect) hasMapErrors = true;
+
             Color lineTint = isCorrect ? playerColor : colorError;
 
-            // Paint the physical UI Ticket!
             TicketStyleManager styler = ticket.GetComponent<TicketStyleManager>();
             if (styler != null) styler.SetTimelineStyle(playerSide, isCorrect);
 
@@ -169,12 +180,10 @@ public class MapManager : MonoBehaviour
         }
 
         return lineImage;
-
     }
 
     private IEnumerator AnimateIn(Image img)
     {
-
         if (AudioManager.instance != null) AudioManager.instance.PlaySound("ArrowSound");
 
         img.fillAmount = 0f;

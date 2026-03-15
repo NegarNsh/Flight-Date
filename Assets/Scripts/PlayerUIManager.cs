@@ -138,16 +138,23 @@ public class PlayerUIManager : MonoBehaviour
         }
 
         // 3. THE VALIDATION CHECK
-        // Are both budgets safe? (Total cost is less than or equal to starting money)
         bool isBudgetSafeA = totalCostA <= budgetA;
         bool isBudgetSafeB = totalCostB <= budgetB;
-
-        // Do they both have at least 1 flight?
         bool hasFlightsA = flightCountA > 0;
         bool hasFlightsB = flightCountB > 0;
 
-        // If ALL of these are true, the button activates. Otherwise, it deactivates.
-        if (isBudgetSafeA && isBudgetSafeB && hasFlightsA && hasFlightsB)
+        // --- NEW: Check the MapManager for errors! ---
+        bool noMapErrors = true;
+        if (MapManager.instance != null)
+        {
+            noMapErrors = !MapManager.instance.hasMapErrors;
+        }
+
+        // The button activates if:
+        // 1. Neither player went over budget
+        // 2. At least ONE player is taking a flight
+        // 3. AND there are NO map route errors!
+        if (isBudgetSafeA && isBudgetSafeB && (hasFlightsA || hasFlightsB) && noMapErrors)
         {
             UpdateButtonState(true);
         }

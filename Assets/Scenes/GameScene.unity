@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.70980394}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -384,8 +384,8 @@ RectTransform:
   - {fileID: 2051870046}
   - {fileID: 861743332}
   - {fileID: 498962877}
-  - {fileID: 344988375}
   - {fileID: 685705778}
+  - {fileID: 344988375}
   - {fileID: 5270196229445831860}
   - {fileID: 623057608557456896}
   - {fileID: 733965343}
@@ -703,8 +703,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1773423888}
   m_HandleRect: {fileID: 1773423887}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 0.99959016
+  m_Value: 1
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -919,7 +919,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000091552734, y: 0.00039742517}
+  m_AnchoredPosition: {x: 0.000091552734, y: 0.000040678035}
   m_SizeDelta: {x: 0, y: 627.78}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &246074456
@@ -1348,19 +1348,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 344988377}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1007036850}
-        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: FinishLevel
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &344988377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1881,7 +1869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.70980394}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2132,7 +2120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.70980394}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2208,7 +2196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.70980394}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2362,13 +2350,34 @@ MonoBehaviour:
     startTime: 0
     endTime: 11.59
     triggerObject: {fileID: 6332937897455299418}
-  - soundName: 'NextLevel_Btn '
+  - soundName: LevelFailed_Scene
+    clip: {fileID: 8300000, guid: b679f57c659af2144b2990a3e1054560, type: 3}
+    volume: 1
+    isMusic: 1
+    startTime: 0
+    endTime: 1
+    triggerObject: {fileID: 5505031555973448649}
+  - soundName: EndGame_Scene
+    clip: {fileID: 8300000, guid: b679f57c659af2144b2990a3e1054560, type: 3}
+    volume: 1
+    isMusic: 1
+    startTime: 0
+    endTime: 1
+    triggerObject: {fileID: 0}
+  - soundName: 'Travel_Btn '
     clip: {fileID: 8300000, guid: 2ef06dd9b6987ed469ed9809fac99a32, type: 3}
     volume: 1
     isMusic: 0
     startTime: 0
     endTime: 2
     triggerObject: {fileID: 344988374}
+  - soundName: 'NextLevel_Btn '
+    clip: {fileID: 8300000, guid: b679f57c659af2144b2990a3e1054560, type: 3}
+    volume: 1
+    isMusic: 0
+    startTime: 0
+    endTime: 1
+    triggerObject: {fileID: 6774487945240424824}
   - soundName: ArrowSound
     clip: {fileID: 8300000, guid: 9672204ebdb44aa42987a24af6d9e8e8, type: 3}
     volume: 1
@@ -2397,6 +2406,27 @@ MonoBehaviour:
     startTime: 0
     endTime: 1
     triggerObject: {fileID: 0}
+  - soundName: 'RetryLevel_Btn '
+    clip: {fileID: 8300000, guid: b679f57c659af2144b2990a3e1054560, type: 3}
+    volume: 1
+    isMusic: 0
+    startTime: 0
+    endTime: 1
+    triggerObject: {fileID: 9187934522144365540}
+  - soundName: 'MainMenu_Btn '
+    clip: {fileID: 8300000, guid: b679f57c659af2144b2990a3e1054560, type: 3}
+    volume: 1
+    isMusic: 0
+    startTime: 0
+    endTime: 1
+    triggerObject: {fileID: 1966454002}
+  - soundName: Airplane
+    clip: {fileID: 8300000, guid: 2ef06dd9b6987ed469ed9809fac99a32, type: 3}
+    volume: 1
+    isMusic: 0
+    startTime: 0
+    endTime: 1
+    triggerObject: {fileID: 1966454002}
   musicSource: {fileID: 494609981}
   backgroundMusicClip: {fileID: 8300000, guid: 1b35451981e0f2447bd7bbd9c929293b, type: 3}
   musicVolume: 0.535
@@ -3188,6 +3218,7 @@ GameObject:
   - component: {fileID: 602076384}
   - component: {fileID: 602076385}
   - component: {fileID: 602076386}
+  - component: {fileID: 602076387}
   m_Layer: 0
   m_Name: GameResultManager
   m_TagString: Untagged
@@ -3247,6 +3278,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelDatabase
   allLevelConfigs: []
+--- !u!114 &602076387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602076383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88423c1fe708ed64294a049bce74e6e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlightAnimator
+  airplanePrefab: {fileID: 7117089873575880713, guid: e340d314b32e4204295c2d18052f63df, type: 3}
+  flightSpeed: 0.2
+  maxScaleBoost: 0.5
 --- !u!1 &612249088
 GameObject:
   m_ObjectHideFlags: 0
@@ -3330,7 +3376,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1093458027}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.99959016
+  m_Size: 0.99999785
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4048,6 +4094,7 @@ MonoBehaviour:
   colorPlayerA: {r: 0.054859374, g: 0.19795212, b: 0.4339623, a: 1}
   colorPlayerB: {r: 0.104012765, g: 0.4415095, b: 0.055813454, a: 1}
   colorError: {r: 1, g: 0.1, b: 0.1, a: 1}
+  hasMapErrors: 0
 --- !u!1 &861743331
 GameObject:
   m_ObjectHideFlags: 0
@@ -4078,7 +4125,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 391237849}
   - {fileID: 1468814329}
   - {fileID: 375720591}
   - {fileID: 294165113}
@@ -4086,6 +4132,7 @@ RectTransform:
   - {fileID: 1359112473}
   - {fileID: 1643087927}
   - {fileID: 415120053}
+  - {fileID: 391237849}
   m_Father: {fileID: 109242515}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -4462,7 +4509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0148676f2b072df419293aaf1cfa5eab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelManager
-  currentLevel: 1
+  currentLevel: 3
   totalLevels: 5
   isLevelActive: 1
   uiManager: {fileID: 783719845}
@@ -5417,7 +5464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.70980394}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5493,7 +5540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.70980394}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7190,7 +7237,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.006652832, y: 0.00040060742}
+  m_AnchoredPosition: {x: -0.006652832, y: -0.00008702734}
   m_SizeDelta: {x: 0.008, y: 627.77}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1804711122
@@ -7638,7 +7685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.70980394}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7862,7 +7909,7 @@ MonoBehaviour:
   m_HorizontalScrollbarVisibility: 2
   m_VerticalScrollbarVisibility: 2
   m_HorizontalScrollbarSpacing: -3
-  m_VerticalScrollbarSpacing: -3
+  m_VerticalScrollbarSpacing: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7955,7 +8002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.70980394}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8406,7 +8453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.70980394}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

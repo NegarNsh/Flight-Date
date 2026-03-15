@@ -919,7 +919,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000091552734, y: 0.000040678035}
+  m_AnchoredPosition: {x: 0.000091552734, y: 0.000004705901}
   m_SizeDelta: {x: 0, y: 627.78}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &246074456
@@ -2344,39 +2344,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   sounds:
   - soundName: LevelComplete_Scene
-    clip: {fileID: 8300000, guid: 72e6d7bc50724f64da1dda362ac448b1, type: 3}
+    clip: {fileID: 8300000, guid: 2ef06dd9b6987ed469ed9809fac99a32, type: 3}
     volume: 1
     isMusic: 1
     startTime: 0
     endTime: 11.59
     triggerObject: {fileID: 6332937897455299418}
   - soundName: LevelFailed_Scene
-    clip: {fileID: 8300000, guid: b679f57c659af2144b2990a3e1054560, type: 3}
+    clip: {fileID: 8300000, guid: 0a0178c97f3e28b4698b79471cde31c6, type: 3}
     volume: 1
     isMusic: 1
     startTime: 0
-    endTime: 1
+    endTime: 10
     triggerObject: {fileID: 5505031555973448649}
   - soundName: EndGame_Scene
-    clip: {fileID: 8300000, guid: b679f57c659af2144b2990a3e1054560, type: 3}
+    clip: {fileID: 8300000, guid: e158e65fcd3811840972d5d6b596126a, type: 3}
     volume: 1
     isMusic: 1
     startTime: 0
-    endTime: 1
+    endTime: 10
     triggerObject: {fileID: 0}
   - soundName: 'Travel_Btn '
-    clip: {fileID: 8300000, guid: 2ef06dd9b6987ed469ed9809fac99a32, type: 3}
+    clip: {fileID: 8300000, guid: af73f144428d1c64bbcf4e44b3456729, type: 3}
     volume: 1
     isMusic: 0
     startTime: 0
     endTime: 2
     triggerObject: {fileID: 344988374}
   - soundName: 'NextLevel_Btn '
-    clip: {fileID: 8300000, guid: b679f57c659af2144b2990a3e1054560, type: 3}
+    clip: {fileID: 8300000, guid: af73f144428d1c64bbcf4e44b3456729, type: 3}
     volume: 1
     isMusic: 0
     startTime: 0
-    endTime: 1
+    endTime: 2
     triggerObject: {fileID: 6774487945240424824}
   - soundName: ArrowSound
     clip: {fileID: 8300000, guid: 9672204ebdb44aa42987a24af6d9e8e8, type: 3}
@@ -2386,49 +2386,49 @@ MonoBehaviour:
     endTime: 2
     triggerObject: {fileID: 0}
   - soundName: TicketPickup
-    clip: {fileID: 8300000, guid: af73f144428d1c64bbcf4e44b3456729, type: 3}
+    clip: {fileID: 8300000, guid: 5d2f8d6213ca49d4dad6e900280bf069, type: 3}
     volume: 1
     isMusic: 0
     startTime: 1
     endTime: 2
     triggerObject: {fileID: 0}
   - soundName: TimelineDrop
-    clip: {fileID: 8300000, guid: 2bc32ba99099ce34092c822c98407dea, type: 3}
+    clip: {fileID: 8300000, guid: a29498501f758cd44b0624bed6356226, type: 3}
     volume: 1
     isMusic: 0
     startTime: 0
     endTime: 1
     triggerObject: {fileID: 0}
   - soundName: ShopDrop
-    clip: {fileID: 8300000, guid: b679f57c659af2144b2990a3e1054560, type: 3}
+    clip: {fileID: 8300000, guid: cca3908676220f047853d4e4c4bb90d9, type: 3}
     volume: 1
     isMusic: 0
     startTime: 0
     endTime: 1
     triggerObject: {fileID: 0}
   - soundName: 'RetryLevel_Btn '
-    clip: {fileID: 8300000, guid: b679f57c659af2144b2990a3e1054560, type: 3}
+    clip: {fileID: 8300000, guid: a402d24c5ab9c2a4eb1603c21b28ac96, type: 3}
     volume: 1
     isMusic: 0
     startTime: 0
-    endTime: 1
+    endTime: 3
     triggerObject: {fileID: 9187934522144365540}
   - soundName: 'MainMenu_Btn '
-    clip: {fileID: 8300000, guid: b679f57c659af2144b2990a3e1054560, type: 3}
+    clip: {fileID: 8300000, guid: af73f144428d1c64bbcf4e44b3456729, type: 3}
     volume: 1
     isMusic: 0
     startTime: 0
-    endTime: 1
+    endTime: 2
     triggerObject: {fileID: 1966454002}
   - soundName: Airplane
-    clip: {fileID: 8300000, guid: 2ef06dd9b6987ed469ed9809fac99a32, type: 3}
+    clip: {fileID: 8300000, guid: a402d24c5ab9c2a4eb1603c21b28ac96, type: 3}
     volume: 1
     isMusic: 0
     startTime: 0
-    endTime: 1
+    endTime: 3
     triggerObject: {fileID: 1966454002}
   musicSource: {fileID: 494609981}
-  backgroundMusicClip: {fileID: 8300000, guid: 1b35451981e0f2447bd7bbd9c929293b, type: 3}
+  backgroundMusicClip: {fileID: 8300000, guid: 2bc32ba99099ce34092c822c98407dea, type: 3}
   musicVolume: 0.535
   musicFadeTime: 0.4
 --- !u!82 &494609980
@@ -3376,7 +3376,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1093458027}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.99999785
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4509,8 +4509,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0148676f2b072df419293aaf1cfa5eab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelManager
-  currentLevel: 3
-  totalLevels: 5
+  currentLevel: 1
+  totalLevels: 7
   isLevelActive: 1
   uiManager: {fileID: 783719845}
   playerUIManager: {fileID: 779004040}

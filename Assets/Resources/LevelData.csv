@@ -1,6 +1,8 @@
 LevelNumber,NameA,PortraitA,MoneyA,CityA,NameB,PortraitB,MoneyB,CityB,CloudedCities,WinText
-1,Anzum,CharacterA,20,Girini,Negar,CharacterB,20,Mavimia,Fokulo;Culibi;Tuttuti;Yadibu;Gotte,"We met at the same location, nice!"
-2,Şunti,CharacterA,40,Giervi,Mendi,CharacterB,40,Girini,Fokulo;Culibi;Tuttuti;Yadibu;Gotte,There are so much to talk about... Let's grab some coffee.
-3,Luli,CharacterA,80,Girini,Elfi,CharacterB,60,Culibi,Fokulo;Yadibu;Gotte,"Thanks to universe to find you finally, i missed you!"
-4,Minu,CharacterA,120,Tuttuti,Dive,CharacterB,140,Gotte,Fokulo;Yadibu,We promised that we would do this some day.
-5,Yumi,CharacterA,200,Fokulo,Timi,CharacterB,200,Yadibu,,"Ticket office is not so nice. despite it, i am here!"
+1,Anzum,CharacterA,20,Girini,Negar,CharacterB,20,Ugvitu,Fokulo;Culibi;Tuttuti;Yadibu;Gotte;Mavimia,Came to see you.
+2,Anzum,CharacterA,40,Girini,Negar,CharacterB,40,Ugvitu,Fokulo;Culibi;Tuttuti;Yadibu;Gotte;Mavimia,"We met at the same location, nice!"
+3,Anzum,CharacterA,60,Girini,Negar,CharacterB,60,Ugvitu,Fokulo;Culibi;Tuttuti;Yadibu;Gotte,Came to see you.
+4,Şunti,CharacterA,40,Giervi,Mendi,CharacterB,40,Girini,Fokulo;Culibi;Tuttuti;Yadibu;Gotte,There are so much to talk about... Let's grab some coffee.
+5,Luli,CharacterA,80,Girini,Elfi,CharacterB,60,Culibi,Fokulo;Yadibu;Gotte,"Thanks to universe to find you finally, i missed you!"
+6,Minu,CharacterA,120,Tuttuti,Dive,CharacterB,140,Gotte,Fokulo;Yadibu,We promised that we would do this some day.
+7,Yumi,CharacterA,200,Fokulo,Timi,CharacterB,200,Yadibu,,"Ticket office is not so nice. despite it, i am here!"

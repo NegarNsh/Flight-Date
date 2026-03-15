@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 
 public class GameResultManager : MonoBehaviour
@@ -10,7 +11,7 @@ public class GameResultManager : MonoBehaviour
     [Header("UI Screens")]
     public GameObject winScreen;
     public GameObject loseScreen;
-    public GameObject endGameScreen; // NEW: The final victory screen!
+    public GameObject endGameScreen;
 
     [Header("UI Text")]
     public TextMeshProUGUI winTextDisplay;
@@ -27,8 +28,12 @@ public class GameResultManager : MonoBehaviour
     public UnityEngine.UI.Image losePortraitA;
     public UnityEngine.UI.Image losePortraitB;
 
+    [Header("Transition Settings")]
+    [Tooltip("How many seconds it takes for the screens to fade in and out.")]
+    public float fadeSpeed = 0.4f;
+
     [HideInInspector]
-    public bool isFinalLevel = false; // NEW: The LevelManager will toggle this!
+    public bool isFinalLevel = false;
 
     // --- UNITY SETUP ---
     void Awake()
@@ -39,29 +44,31 @@ public class GameResultManager : MonoBehaviour
     // --- GAME LOGIC ---
     public void CheckWinCondition(PlayerUIManager playerUI, LevelConfig config)
     {
+
         string finalDestA = GetFinalDestination(playerUI.dropZoneA, config.characterA.startingCity);
         string finalDestB = GetFinalDestination(playerUI.dropZoneB, config.characterB.startingCity);
 
         if (finalDestA == finalDestB)
         {
             Debug.Log("WIN! Both players met in " + finalDestA);
-
             if (winTextDisplay != null) winTextDisplay.text = config.winText;
 
-            // NEW: Decide whether to show the normal Win Screen or the End Game Screen!
             if (isFinalLevel && endGameScreen != null)
             {
-                endGameScreen.SetActive(true);
+                StartCoroutine(FadeScreen(endGameScreen, true));
             }
             else if (winScreen != null)
             {
-                winScreen.SetActive(true);
+                StartCoroutine(FadeScreen(winScreen, true));
             }
         }
         else
         {
             Debug.Log("LOSE! Player A is in " + finalDestA + " but Player B is in " + finalDestB);
-            if (loseScreen != null) loseScreen.SetActive(true);
+            if (loseScreen != null)
+            {
+                StartCoroutine(FadeScreen(loseScreen, true));
+            }
         }
     }
 
@@ -93,8 +100,57 @@ public class GameResultManager : MonoBehaviour
 
     public void HideAllScreens()
     {
-        if (winScreen != null) winScreen.SetActive(false);
-        if (loseScreen != null) loseScreen.SetActive(false);
-        if (endGameScreen != null) endGameScreen.SetActive(false); // NEW: Hide this too!
+        // Smoothly fade out any screen that is currently visible!
+        if (winScreen != null && winScreen.activeSelf) StartCoroutine(FadeScreen(winScreen, false));
+        if (loseScreen != null && loseScreen.activeSelf) StartCoroutine(FadeScreen(loseScreen, false));
+        if (endGameScreen != null && endGameScreen.activeSelf) StartCoroutine(FadeScreen(endGameScreen, false));
+    }
+
+    // --- THE VISUAL FADE MAGIC ---
+    private IEnumerator FadeScreen(GameObject screen, bool fadeIn)
+    {
+        if (screen == null) yield break;
+
+        // 1. Secretly add a CanvasGroup if the designer forgot to put one on the screen!
+        CanvasGroup cg = screen.GetComponent<CanvasGroup>();
+        if (cg == null) cg = screen.AddComponent<CanvasGroup>();
+
+        // 2. Setup the starting values
+        if (fadeIn)
+        {
+            cg.alpha = 0f; // Make it 100% invisible
+            screen.SetActive(true); // Turn it on
+        }
+
+        // Prevent the player from clicking buttons while the screen is still ghostly/fading
+        cg.interactable = false;
+        cg.blocksRaycasts = false;
+
+        // 3. Do the smooth math!
+        float elapsedTime = 0f;
+        float startAlpha = cg.alpha;
+        float targetAlpha = fadeIn ? 1f : 0f;
+
+        while (elapsedTime < fadeSpeed)
+        {
+            elapsedTime += Time.deltaTime;
+            cg.alpha = Mathf.Lerp(startAlpha, targetAlpha, elapsedTime / fadeSpeed);
+            yield return null;
+        }
+
+        // 4. Clean up at the exact end of the fade
+        cg.alpha = targetAlpha;
+
+        if (fadeIn)
+        {
+            // Now that it's fully visible, let them click the buttons!
+            cg.interactable = true;
+            cg.blocksRaycasts = true;
+        }
+        else
+        {
+            // Now that it is fully invisible, turn the object off completely!
+            screen.SetActive(false);
+        }
     }
 }

@@ -36,6 +36,8 @@ public class DraggableFlight : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        if (AudioManager.instance != null) AudioManager.instance.PlaySound("TicketPickup");
+
         if (LevelManager.instance != null && !LevelManager.instance.isLevelActive) return;
 
         parentAfterDrag = transform.parent;
@@ -141,10 +143,25 @@ public class DraggableFlight : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         if (MapManager.instance != null)
         {
             MapManager.instance.RefreshMap();
+
+
+            if (AudioManager.instance != null)
+            {
+                // Ask: "Did I land inside a Timeline Column?"
+                bool isInTimeline = (transform.parent.GetComponent<TimelineColumn>() != null);
+
+                if (isInTimeline)
+                {
+                    AudioManager.instance.PlaySound("TimelineDrop"); // It snapped into the calendar!
+                }
+                else
+                {
+                    AudioManager.instance.PlaySound("ShopDrop"); // It went back to the bottom shop!
+                }
+            }
+
+            UpdateDesignMode();
         }
-
-        UpdateDesignMode();
-
     }
 
     public void UpdateDesignMode()

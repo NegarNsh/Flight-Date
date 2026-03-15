@@ -169,10 +169,14 @@ public class MapManager : MonoBehaviour
         }
 
         return lineImage;
+
     }
 
     private IEnumerator AnimateIn(Image img)
     {
+
+        if (AudioManager.instance != null) AudioManager.instance.PlaySound("ArrowSound");
+
         img.fillAmount = 0f;
         float speed = 2.0f;
         while (img != null && img.fillAmount < 1f)

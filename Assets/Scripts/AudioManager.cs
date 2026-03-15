@@ -13,10 +13,6 @@ public class GameSound
     [Tooltip("Check this if this is background music that should smoothly crossfade!")]
     public bool isMusic = false;
 
-    [Header("Playback Timing (SFX Only)")]
-    public float startTime = 0f;
-    public float endTime = 0f;
-
     [Header("Auto-Wiring Settings")]
     public GameObject triggerObject;
 }
@@ -41,7 +37,9 @@ public class AudioManager : MonoBehaviour
 
     void Awake()
     {
+        // Safe Singleton: Ensures only ONE AudioManager ever exists in the scene
         if (instance == null) { instance = this; }
+        else { Destroy(gameObject); }
     }
 
     void Start()
@@ -70,7 +68,7 @@ public class AudioManager : MonoBehaviour
                 else
                 {
                     AutoSoundTrigger trigger = s.triggerObject.AddComponent<AutoSoundTrigger>();
-                    trigger.Initialize(s.soundName, s.isMusic); // NEW: Tell the trigger if it's music!
+                    trigger.Initialize(s.soundName, s.isMusic);
                 }
             }
         }
@@ -91,24 +89,20 @@ public class AudioManager : MonoBehaviour
                     return;
                 }
 
-                // SFX Playback
+                // --- THE FIX: Clean SFX Playback without the rewind bug! ---
                 AudioSource tempSpeaker = gameObject.AddComponent<AudioSource>();
                 tempSpeaker.clip = s.clip;
                 tempSpeaker.volume = s.volume;
-                tempSpeaker.time = s.startTime;
                 tempSpeaker.Play();
 
-                float duration = s.clip.length - s.startTime;
-                if (s.endTime > s.startTime && s.endTime <= s.clip.length) duration = s.endTime - s.startTime;
-
-                Destroy(tempSpeaker, duration);
+                // Destroy the audio source component right after the clip naturally finishes playing
+                Destroy(tempSpeaker, s.clip.length);
                 return;
             }
         }
         Debug.LogWarning("Audio Manager: Could not find sound '" + nameToPlay + "'");
     }
 
-    // --- NEW: A public command to revert to the main theme! ---
     public void PlayDefaultMusic()
     {
         if (musicSource != null && backgroundMusicClip != null && musicSource.clip != backgroundMusicClip)
@@ -118,7 +112,6 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    // --- NEW: A way to manually stop a specific sound effect! ---
     public void StopSound(string nameToStop)
     {
         // Look through all the temporary speakers we created
@@ -157,7 +150,6 @@ public class AudioManager : MonoBehaviour
 
         // Swap the track
         musicSource.clip = newClip;
-        musicSource.time = 0f;
         musicSource.loop = true;
         musicSource.Play();
 
@@ -200,7 +192,7 @@ public class AutoSoundTrigger : MonoBehaviour
         }
     }
 
-    // NEW: Reverts the music when the screen turns OFF!
+    // Reverts the music when the screen turns OFF!
     void OnDisable()
     {
         if (isReady && isMusicTrack && AudioManager.instance != null)
@@ -208,6 +200,4 @@ public class AutoSoundTrigger : MonoBehaviour
             AudioManager.instance.PlayDefaultMusic();
         }
     }
-
-
 }

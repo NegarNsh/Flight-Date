@@ -118,6 +118,29 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    // --- NEW: A way to manually stop a specific sound effect! ---
+    public void StopSound(string nameToStop)
+    {
+        // Look through all the temporary speakers we created
+        AudioSource[] activeSpeakers = GetComponents<AudioSource>();
+
+        foreach (GameSound s in sounds)
+        {
+            if (s.soundName == nameToStop)
+            {
+                // Find the speaker playing this exact clip and destroy it!
+                foreach (AudioSource speaker in activeSpeakers)
+                {
+                    if (speaker != musicSource && speaker.clip == s.clip)
+                    {
+                        Destroy(speaker);
+                    }
+                }
+                return;
+            }
+        }
+    }
+
     // --- THE SNAPPY FADE LOGIC ---
     private IEnumerator CrossfadeMusic(AudioClip newClip, float targetVol)
     {
@@ -185,4 +208,6 @@ public class AutoSoundTrigger : MonoBehaviour
             AudioManager.instance.PlayDefaultMusic();
         }
     }
+
+
 }

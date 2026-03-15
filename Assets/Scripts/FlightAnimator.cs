@@ -12,7 +12,6 @@ public class FlightAnimator : MonoBehaviour
     public float flightSpeed = 1.5f;
     public float maxScaleBoost = 0.8f;
 
-    // --- NEW: The Double-Click Lock! ---
     private bool isFlying = false;
 
     void Awake()
@@ -23,46 +22,94 @@ public class FlightAnimator : MonoBehaviour
     // --- PUBLIC TRIGGER ---
     public void PlayFlightSequence(PlayerUIManager playerUI, LevelConfig config, Action onSequenceComplete)
     {
-        // If we are already flying, ignore any extra button clicks!
         if (isFlying) return;
-
-        StartCoroutine(AnimatePlayerJourney(playerUI, config, onSequenceComplete));
+        StartCoroutine(AnimateBothPlayers(playerUI, config, onSequenceComplete));
     }
 
-    // --- THE ANIMATION LOGIC ---
-    private IEnumerator AnimatePlayerJourney(PlayerUIManager playerUI, LevelConfig config, Action onSequenceComplete)
+    // --- THE MASTER SEQUENCE ---
+    private IEnumerator AnimateBothPlayers(PlayerUIManager playerUI, LevelConfig config, Action onSequenceComplete)
     {
-        isFlying = true; // Lock the doors, we are taking off!
+        isFlying = true;
 
-        if (airplanePrefab == null)
+        // =========================================================
+        // --- PLAY THE AUDIO MANAGER SOUND! ---
+        if (AudioManager.instance != null)
         {
-            isFlying = false;
-            onSequenceComplete?.Invoke();
-            yield break;
+            // IMPORTANT: Make sure you name the sound "Airplane" in your AudioManager list!
+            AudioManager.instance.PlaySound("Airplane");
         }
-
-        TimelineColumn timeline = playerUI.dropZoneA.GetComponent<TimelineColumn>();
-        List<DraggableFlight> tickets = timeline.GetSortedTickets();
-
-        Transform startCity = GetCityTransform(config.characterA.startingCity);
-        if (startCity == null)
-        {
-            isFlying = false;
-            onSequenceComplete?.Invoke();
-            yield break;
-        }
-
-        GameObject plane = Instantiate(airplanePrefab, startCity.position, Quaternion.identity, startCity.parent);
-        plane.transform.SetAsLastSibling();
-
-        Vector3 baseScale = plane.transform.localScale;
-        Vector3 currentPos = startCity.position;
+        // =========================================================
 
         if (MapManager.instance != null)
         {
             if (MapManager.instance.avatarA != null) MapManager.instance.avatarA.gameObject.SetActive(false);
             if (MapManager.instance.avatarB != null) MapManager.instance.avatarB.gameObject.SetActive(false);
         }
+
+        int flightsCompleted = 0;
+        List<GameObject> activePlanes = new List<GameObject>();
+
+        TimelineColumn timelineA = playerUI.dropZoneA.GetComponent<TimelineColumn>();
+        StartCoroutine(AnimateSinglePlayer(timelineA, config.characterA.startingCity, activePlanes, () => { flightsCompleted++; }));
+
+        TimelineColumn timelineB = playerUI.dropZoneB.GetComponent<TimelineColumn>();
+        StartCoroutine(AnimateSinglePlayer(timelineB, config.characterB.startingCity, activePlanes, () => { flightsCompleted++; }));
+
+        yield return new WaitUntil(() => flightsCompleted >= 2);
+
+        yield return new WaitForSeconds(0.5f);
+
+        // =========================================================
+        // --- STOP THE AUDIO MANAGER SOUND! ---
+        if (AudioManager.instance != null)
+        {
+            AudioManager.instance.StopSound("Airplane");
+        }
+        // =========================================================
+
+        foreach (GameObject p in activePlanes)
+        {
+            if (p != null) Destroy(p);
+        }
+
+        isFlying = false;
+        onSequenceComplete?.Invoke();
+    }
+
+
+    // --- THE REUSABLE FLIGHT RECIPE ---
+    // Notice we added the "activePlanes" list to the recipe requirements!
+    private IEnumerator AnimateSinglePlayer(TimelineColumn timeline, string startCityName, List<GameObject> activePlanes, Action onFinished)
+    {
+        if (airplanePrefab == null || timeline == null)
+        {
+            onFinished?.Invoke();
+            yield break;
+        }
+
+        List<DraggableFlight> tickets = timeline.GetSortedTickets();
+
+        Transform startCity = GetCityTransform(startCityName);
+        if (startCity == null)
+        {
+            onFinished?.Invoke();
+            yield break;
+        }
+
+        // --- NEW: Find the absolute topmost Canvas in the entire scene ---
+        Canvas topCanvas = startCity.GetComponentInParent<Canvas>().rootCanvas;
+
+        // Spawn the plane on that top canvas instead of the city's folder!
+        GameObject plane = Instantiate(airplanePrefab, startCity.position, Quaternion.identity, topCanvas.transform);
+
+        // Now when we say "go to the front", it goes to the front of the ENTIRE game!
+        plane.transform.SetAsLastSibling();
+
+        // --- NEW: Give this newly spawned plane to the Master Sequence to hold onto! ---
+        activePlanes.Add(plane);
+
+        Vector3 baseScale = plane.transform.localScale;
+        Vector3 currentPos = startCity.position;
 
         foreach (DraggableFlight ticket in tickets)
         {
@@ -74,7 +121,6 @@ public class FlightAnimator : MonoBehaviour
             float t = 0f;
             while (t < 1f)
             {
-                // --- NEW: Safety check! If the plane got destroyed, stop the code immediately. ---
                 if (plane == null) yield break;
 
                 t += Time.deltaTime * flightSpeed;
@@ -89,7 +135,7 @@ public class FlightAnimator : MonoBehaviour
                     plane.transform.rotation = Quaternion.Euler(0, 0, angle);
                 }
 
-                // The Upside-Down Fix + Scale Bounce
+                // Upside-Down Fix + Scale Bounce
                 float flipY = (direction.x < 0) ? -1f : 1f;
                 float scaleMultiplier = 1f + (Mathf.Sin(normalizedT * Mathf.PI) * maxScaleBoost);
                 plane.transform.localScale = new Vector3(baseScale.x, baseScale.y * flipY, baseScale.z) * scaleMultiplier;
@@ -97,7 +143,6 @@ public class FlightAnimator : MonoBehaviour
                 yield return null;
             }
 
-            // --- NEW: Safety check before resetting! ---
             if (plane == null) yield break;
 
             plane.transform.position = targetPos;
@@ -108,10 +153,8 @@ public class FlightAnimator : MonoBehaviour
             yield return new WaitForSeconds(0.3f);
         }
 
-        // Clean up and unlock!
-        if (plane != null) Destroy(plane);
-        isFlying = false;
-        onSequenceComplete?.Invoke();
+        // We DO NOT destroy the plane here anymore! We just tell the master sequence we landed.
+        onFinished?.Invoke();
     }
 
     private Transform GetCityTransform(string cityName)
